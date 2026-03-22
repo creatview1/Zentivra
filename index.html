@@ -1,16 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="google-adsense-account" content="ca-pub-3749716982651755">
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3749716982651755"
-     crossorigin="anonymous"></script>
   <meta name="description"
     content="AI Tools Hub — Discover 100+ powerful AI tools and 300+ ready-to-use AI prompts for writing, image generation, coding, video, marketing and productivity.">
   <meta name="keywords"
-    content="AI tools, best AI tools free, AI tools for students, ChatGPT prompts, AI image prompts, AI tools 2026">
+    content="AI tools, best AI tools free, AI tools for students, ChatGPT prompts, AI image prompts, AI tools 2026,Zentivra tools,Zentivra">
   <meta property="og:title" content="AI Tools Hub — 100+ AI Tools & 300+ Prompts">
   <meta property="og:description"
     content="Find the best AI tools and ready-to-use prompts for writing, images, coding, video, and more.">
@@ -1884,12 +1880,145 @@
             </div>
           </div>
         </div>
+        
       </section>
 
       <!-- AD BANNER -->
       <div class="section-inner" style="max-width:1200px;margin:0 auto;padding:0 1.5rem;">
         <div class="ad-box">📢 Advertisement Banner (728×90) — Google AdSense / Affiliate Banner</div>
       </div>
+       <div class="section-inner" style="max-width:1200px;margin:0 auto;padding:0 1.5rem;">
+        <section class="ai-guide-section">
+  <div class="ai-container">
+    
+    <h1>AI Tool Guide</h1>
+    <p class="subtitle">
+      Copy this smart prompt & Read and Enter tool name in ChatGPT
+    </p>
+
+    <div class="prompt-box">
+      
+      <!-- Preview -->
+      <div id="previewText">
+        You are an expert AI Tools Guide Generator...
+      </div>
+
+      <!-- Full Prompt (Hidden) -->
+      <textarea id="fullPrompt">
+You are an expert AI Tools Guide Generator.
+
+Tool Name[Enter]. Your job is to generate a complete, easy-to-understand guide for that tool.
+
+Rules:
+- Response should be available in BOTH English and Telugu.
+- Keep language simple and beginner-friendly.
+- Format the output clearly with headings and emojis.
+- Make it look like a professional guide/manual.
+
+Output format:
+
+1. Tool Name
+2. 🎯 Purpose
+3. 🧠 What You Can Do
+4. ⚙️ How It Works
+5. 🛠️ Step-by-Step Guide
+6. 🧩 Real Example
+7. 🚀 Pro Tips
+8. ⚠️ Limitations
+9. 💰 Free or Paid
+10. 🏁 Final Verdict
+
+Important:
+- First English, then Telugu
+- Do not skip any section
+      </textarea>
+
+      <button onclick="copyPrompt()">📋 Copy Prompt</button>
+
+    </div>
+
+  </div>
+</section>
+
+<style>
+.ai-guide-section {
+  padding: 60px 20px;
+  color: white;
+  text-align: center;
+}
+
+.ai-container {
+  max-width: 900px;
+  margin: auto;
+}
+.ai-container h1{
+  font-family: sans-serif; 
+}
+
+.ai-guide-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  opacity: 0.8;
+  margin-bottom: 30px;
+}
+
+.prompt-box {
+  background: rgba(255,255,255,0.1);
+  padding: 20px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+}
+
+/* Preview only */
+#previewText {
+  background: #fff;
+  color: #333;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: left;
+  height: 60px;
+  overflow: hidden;
+  font-size: 14px;
+}
+
+/* Hidden full prompt */
+#fullPrompt {
+  position: absolute;
+  left: -9999px;
+}
+
+button {
+  margin-top: 15px;
+  padding: 12px 20px;
+  background: #ff7a18;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background: #ff5200;
+}
+</style>
+
+<script>
+function copyPrompt() {
+  const full = document.getElementById("fullPrompt");
+  full.select();
+  document.execCommand("copy");
+
+  // Show full prompt after click
+  document.getElementById("previewText").innerText = full.value;
+
+  alert("Full prompt copied! Paste it in ChatGPT.");
+}
+</script>
+       </div>
 
       <!-- TRENDING TOOLS -->
       <section id="trending-home">
@@ -1904,6 +2033,7 @@
             <button class="btn-outline" onclick="showPage('tools')">View All 120+ Tools →</button>
           </div>
         </div>
+        
       </section>
 
       <!-- CATEGORIES -->
@@ -2301,8 +2431,8 @@
             <li><a href="#" onclick="showPage('about')">About</a></li>
             <li><a href="#" onclick="showPage('contact')">Contact</a></li>
             <li><a href="#" onclick="showPage('submit')">Submit Tool</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms of Service</a></li>
+            <li><a href="privacy policy.html">Privacy Policy</a></li>
+            <li><a href="terms and conditions.html">Terms and conditions</a></li>
           </ul>
         </div>
       </div>
