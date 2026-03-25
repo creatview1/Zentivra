@@ -1,0 +1,3464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="AI Tools Hub — Discover 100+ powerful AI tools and 300+ ready-to-use AI prompts for writing, image generation, coding, video, marketing and productivity.">
+  <meta name="keywords"
+    content="AI tools, best AI tools free, AI tools for students, ChatGPT prompts, AI image prompts, AI tools 2026,Zentivra tools,Zentivra">
+  <meta property="og:title" content="AI Tools Hub — 100+ AI Tools & 300+ Prompts">
+  <meta property="og:description"
+    content="Find the best AI tools and ready-to-use prompts for writing, images, coding, video, and more.">
+  <title>Best AI Tools & Guides - Zentivra</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap"
+    rel="stylesheet">
+  <link rel="icon" href="zentivra.png">
+  <style>
+    :root {
+      --bg: #07070f;
+      --bg2: #0d0d1a;
+      --bg3: #12122a;
+      --glass: rgba(255, 255, 255, 0.04);
+      --glass2: rgba(255, 255, 255, 0.08);
+      --border: rgba(255, 255, 255, 0.09);
+      --primary: #7c5cfc;
+      --primary2: #a855f7;
+      --accent: #22d3ee;
+      --accent2: #f0abfc;
+      --text: #e8e8f0;
+      --muted: #8888aa;
+      --card-r: 18px;
+      --trans: all 0.28s cubic-bezier(.4, 0, .2, 1);
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      overflow-x: hidden;
+      line-height: 1.6;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      font-family: 'DM sans', sans-serif;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    /* SCROLLBAR */
+    ::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: var(--bg);
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: var(--primary);
+      border-radius: 3px;
+    }
+
+    /* NAV */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      background: rgba(7, 7, 15, 0.85);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      border-bottom: 1px solid var(--border);
+      padding: 0 1.5rem;
+      height: 62px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .nav-logo {
+      font-family: 'Syne', sans-serif;
+      font-size: 1.3rem;
+      font-weight: 800;
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      white-space: nowrap;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 0.2rem;
+      list-style: none;
+      align-items: center;
+    }
+
+    .nav-links a {
+      font-size: 0.82rem;
+      font-weight: 500;
+      color: var(--muted);
+      padding: 0.4rem 0.75rem;
+      border-radius: 8px;
+      transition: var(--trans);
+    }
+
+    .nav-links a:hover {
+      color: var(--text);
+      background: var(--glass2);
+    }
+
+    .nav-right {
+      display: flex;
+      gap: 0.7rem;
+      align-items: center;
+    }
+
+    .btn-dark-toggle {
+      background: var(--glass);
+      border: 1px solid var(--border);
+      color: var(--muted);
+      border-radius: 8px;
+      padding: 0.4rem 0.7rem;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: var(--trans);
+    }
+
+    .btn-dark-toggle:hover {
+      color: var(--text);
+      background: var(--glass2);
+    }
+
+    .btn-nav {
+      background: linear-gradient(135deg, var(--primary), var(--primary2));
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      padding: 0.45rem 1.1rem;
+      font-size: 0.82rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: var(--trans);
+      font-family: 'Syne', sans-serif;
+    }
+
+    .btn-nav:hover {
+      opacity: 0.85;
+      transform: translateY(-1px);
+    }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      background: none;
+      border: none;
+      padding: 4px;
+    }
+
+    .hamburger span {
+      display: block;
+      width: 22px;
+      height: 2px;
+      background: var(--text);
+      border-radius: 2px;
+      transition: var(--trans);
+    }
+
+    .mobile-menu {
+      display: none;
+      position: fixed;
+      top: 62px;
+      left: 0;
+      right: 0;
+      z-index: 999;
+      background: rgba(7, 7, 15, 0.97);
+      backdrop-filter: blur(18px);
+      border-bottom: 1px solid var(--border);
+      padding: 1rem 1.5rem;
+      flex-direction: column;
+      gap: 0.3rem;
+    }
+
+    .mobile-menu.open {
+      display: flex;
+    }
+
+    .mobile-menu a {
+      padding: 0.7rem 0.5rem;
+      color: var(--muted);
+      border-bottom: 1px solid var(--border);
+      font-size: 0.9rem;
+      transition: var(--trans);
+    }
+
+    .mobile-menu a:hover {
+      color: var(--text);
+      padding-left: 1rem;
+    }
+
+    /* HERO */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 6rem 1.5rem 4rem;
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+    }
+
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+      background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(124, 92, 252, 0.25) 0%, transparent 70%),
+        radial-gradient(ellipse 60% 50% at 80% 50%, rgba(34, 211, 238, 0.12) 0%, transparent 60%),
+        radial-gradient(ellipse 50% 40% at 20% 80%, rgba(168, 85, 247, 0.12) 0%, transparent 60%);
+    }
+
+    .hero-grid {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+      background-image: linear-gradient(var(--border) 1px, transparent 1px),
+        linear-gradient(90deg, var(--border) 1px, transparent 1px);
+      background-size: 60px 60px;
+      mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 30%, transparent 100%);
+      -webkit-mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 30%, transparent 100%);
+    }
+
+    .hero-orb {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(80px);
+      animation: orbFloat 8s ease-in-out infinite;
+    }
+
+    .hero-orb-1 {
+      width: 400px;
+      height: 400px;
+      background: rgba(124, 92, 252, 0.18);
+      top: -100px;
+      left: -100px;
+      animation-delay: 0s;
+    }
+
+    .hero-orb-2 {
+      width: 300px;
+      height: 300px;
+      background: rgba(34, 211, 238, 0.12);
+      bottom: 0;
+      right: -50px;
+      animation-delay: -4s;
+    }
+
+    @keyframes orbFloat {
+
+      0%,
+      100% {
+        transform: translateY(0) scale(1);
+      }
+
+      50% {
+        transform: translateY(-40px) scale(1.08);
+      }
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--glass);
+      border: 1px solid var(--border);
+      border-radius: 100px;
+      padding: 0.35rem 1rem;
+      font-size: 0.78rem;
+      color: var(--muted);
+      margin-bottom: 1.8rem;
+      animation: fadeUp 0.6s ease both;
+    }
+
+    .hero-badge span {
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    .hero-title {
+      font-size: clamp(2.2rem, 6vw, 4.2rem);
+      font-weight: 800;
+      line-height: 1.15;
+      margin-bottom: 1.2rem;
+      animation: fadeUp 0.7s ease both 0.1s;
+    }
+
+    .hero-title .grad {
+      background: linear-gradient(135deg, var(--primary), var(--accent), var(--accent2));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .hero-sub {
+      font-size: clamp(1rem, 2.5vw, 1.2rem);
+      color: var(--muted);
+      max-width: 560px;
+      margin: 0 auto 2.5rem;
+      animation: fadeUp 0.7s ease both 0.2s;
+    }
+
+    .hero-search {
+      display: flex;
+      max-width: 560px;
+      margin: 0 auto 2rem;
+      background: var(--glass2);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      overflow: hidden;
+      animation: fadeUp 0.7s ease both 0.3s;
+      transition: var(--trans);
+    }
+
+    .hero-search:focus-within {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(124, 92, 252, 0.15);
+    }
+
+    .hero-search input {
+      flex: 1;
+      background: none;
+      border: none;
+      outline: none;
+      padding: 0.9rem 1.2rem;
+      color: var(--text);
+      font-size: 0.95rem;
+      font-family: 'DM Sans', sans-serif;
+    }
+
+    .hero-search input::placeholder {
+      color: var(--muted);
+    }
+
+    .hero-search button {
+      background: linear-gradient(135deg, var(--primary), var(--primary2));
+      border: none;
+      color: #fff;
+      padding: 0 1.4rem;
+      font-weight: 600;
+      cursor: pointer;
+      font-size: 0.9rem;
+      font-family: 'Syne', sans-serif;
+      transition: var(--trans);
+    }
+
+    .hero-search button:hover {
+      opacity: 0.85;
+    }
+
+    .hero-btns {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      animation: fadeUp 0.7s ease both 0.4s;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--primary), var(--primary2));
+      color: #fff;
+      border: none;
+      border-radius: 12px;
+      padding: 0.75rem 1.8rem;
+      font-size: 0.95rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: var(--trans);
+      font-family: 'Syne', sans-serif;
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px rgba(124, 92, 252, 0.4);
+    }
+
+    .btn-outline {
+      background: var(--glass);
+      color: var(--text);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 0.75rem 1.8rem;
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: var(--trans);
+      font-family: 'Syne', sans-serif;
+    }
+
+    .btn-outline:hover {
+      background: var(--glass2);
+      border-color: var(--primary);
+      transform: translateY(-2px);
+    }
+
+    .hero-stats {
+      display: flex;
+      gap: 2.5rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 3rem;
+      animation: fadeUp 0.7s ease both 0.5s;
+    }
+
+    .stat {
+      text-align: center;
+    }
+
+    .stat-num {
+      font-family: 'Syne', sans-serif;
+      font-size: 1.8rem;
+      font-weight: 800;
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .stat-label {
+      font-size: 0.78rem;
+      color: var(--muted);
+      margin-top: 0.2rem;
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* SECTIONS */
+    section {
+      padding: 5rem 1.5rem;
+    }
+
+    .section-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .section-tag {
+      display: inline-block;
+      background: rgba(124, 92, 252, 0.15);
+      color: var(--primary2);
+      border: 1px solid rgba(124, 92, 252, 0.25);
+      border-radius: 100px;
+      padding: 0.3rem 1rem;
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      margin-bottom: 0.9rem;
+    }
+
+    .section-title {
+      font-size: clamp(1.6rem, 4vw, 2.5rem);
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: 0.7rem;
+    }
+
+    .section-sub {
+      color: var(--muted);
+      font-size: 1rem;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    /* CARDS GRID */
+    .tools-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+      gap: 1.2rem;
+    }
+
+    .tool-card {
+      background: var(--glass);
+      border: 1px solid var(--border);
+      border-radius: var(--card-r);
+      padding: 1.4rem;
+      transition: var(--trans);
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .tool-card::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+      background: linear-gradient(135deg, rgba(124, 92, 252, 0.06) 0%, transparent 60%);
+      opacity: 0;
+      transition: var(--trans);
+    }
+
+    .tool-card:hover {
+      border-color: rgba(124, 92, 252, 0.4);
+      transform: translateY(-4px);
+      box-shadow: 0 16px 48px rgba(0, 0, 0, 0.4);
+    }
+
+    .tool-card:hover::before {
+      opacity: 1;
+    }
+
+    .tool-card-top {
+      display: flex;
+      align-items: center;
+      gap: 0.9rem;
+      margin-bottom: 0.9rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    .tool-icon {
+      width: 46px;
+      height: 46px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.4rem;
+      flex-shrink: 0;
+      border: 1px solid var(--border);
+    }
+
+    .tool-name {
+      font-family: 'Syne', sans-serif;
+      font-size: 1rem;
+      font-weight: 700;
+    }
+
+    .tool-desc {
+      font-size: 0.83rem;
+      color: var(--muted);
+      line-height: 1.5;
+      margin-bottom: 1rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    .tool-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+      z-index: 1;
+    }
+
+    .tool-tag {
+      font-size: 0.72rem;
+      font-weight: 600;
+      padding: 0.25rem 0.7rem;
+      border-radius: 100px;
+      background: rgba(124, 92, 252, 0.12);
+      color: var(--primary2);
+      border: 1px solid rgba(124, 92, 252, 0.2);
+    }
+
+    .tool-stars {
+      font-size: 0.75rem;
+      color: #fbbf24;
+    }
+
+    .btn-view {
+      background: linear-gradient(135deg, var(--primary), var(--primary2));
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      padding: 0.4rem 1rem;
+      font-size: 0.78rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: var(--trans);
+      font-family: 'Syne', sans-serif;
+    }
+
+    .btn-view:hover {
+      opacity: 0.85;
+      transform: translateY(-1px);
+    }
+
+    /* CATEGORIES */
+    .cats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 1rem;
+    }
+
+    .cat-card {
+      background: var(--glass);
+      border: 1px solid var(--border);
+      border-radius: var(--card-r);
+      padding: 1.5rem 1rem;
+      text-align: center;
+      transition: var(--trans);
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cat-card:hover {
+      border-color: rgba(124, 92, 252, 0.4);
+      transform: translateY(-4px);
+    }
+
+    .cat-card:hover .cat-icon {
+      transform: scale(1.15);
+    }
+
+    .cat-icon {
+      font-size: 2.2rem;
+      margin-bottom: 0.7rem;
+      display: block;
+      transition: var(--trans);
+    }
+
+    .cat-name {
+      font-family: 'Syne', sans-serif;
+      font-weight: 700;
+      font-size: 0.9rem;
+    }
+
+    .cat-count {
+      font-size: 0.75rem;
+      color: var(--muted);
+      margin-top: 0.25rem;
+    }
+
+    /* PROMPTS */
+    .prompts-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1.2rem;
+    }
+
+    .prompt-card {
+      background: var(--glass);
+      border: 1px solid var(--border);
+      border-radius: var(--card-r);
+      padding: 1.3rem;
+      transition: var(--trans);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .prompt-card::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, var(--primary), var(--accent));
+      opacity: 0;
+      transition: var(--trans);
+    }
+
+    .prompt-card:hover {
+      border-color: rgba(34, 211, 238, 0.3);
+      transform: translateY(-3px);
+    }
+
+    .prompt-card:hover::after {
+      opacity: 1;
+    }
+
+    .prompt-cat {
+      font-size: 0.72rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--accent);
+      margin-bottom: 0.6rem;
+    }
+
+    .prompt-title {
+      font-family: 'Syne', sans-serif;
+      font-weight: 700;
+      font-size: 0.9rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .prompt-text {
+      font-size: 0.82rem;
+      color: var(--muted);
+      line-height: 1.55;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      margin-bottom: 0.9rem;
+    }
+
+    .btn-copy {
+      background: var(--glass2);
+      border: 1px solid var(--border);
+      color: var(--text);
+      border-radius: 8px;
+      padding: 0.38rem 0.9rem;
+      font-size: 0.78rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: var(--trans);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .btn-copy:hover {
+      background: rgba(34, 211, 238, 0.12);
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    .btn-copy.copied {
+      background: rgba(34, 211, 238, 0.15);
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    /* DAILY SECTION */
+    .daily-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+    }
+
+    @media (max-width: 640px) {
+      .daily-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .daily-card {
+      background: var(--glass);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 2rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .daily-card-bg {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+      background: radial-gradient(ellipse at top right, rgba(124, 92, 252, 0.15), transparent 60%);
+    }
+
+    .daily-card>* {
+      position: relative;
+      z-index: 1;
+    }
+
+    .daily-label {
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--primary2);
+      margin-bottom: 0.8rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .daily-label-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--primary);
+      box-shadow: 0 0 8px var(--primary);
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+
+      0%,
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+
+      50% {
+        opacity: 0.6;
+        transform: scale(1.3);
+      }
+    }
+
+    .daily-title {
+      font-family: 'Syne', sans-serif;
+      font-size: 1.2rem;
+      font-weight: 800;
+      margin-bottom: 0.5rem;
+    }
+
+    .daily-sub {
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-bottom: 1.2rem;
+    }
+
+    /* LEADERBOARD */
+    .leaderboard {
+      display: flex;
+      flex-direction: column;
+      gap: 0.7rem;
+    }
+
+    .lb-item {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      background: var(--glass);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 0.9rem 1rem;
+      transition: var(--trans);
+    }
+
+    .lb-item:hover {
+      border-color: rgba(124, 92, 252, 0.4);
+      transform: translateX(4px);
+    }
+
+    .lb-rank {
+      width: 28px;
+      height: 28px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Syne', sans-serif;
+      font-weight: 800;
+      font-size: 0.85rem;
+      flex-shrink: 0;
+    }
+
+    .lb-rank-1 {
+      background: linear-gradient(135deg, #f59e0b, #fbbf24);
+      color: #000;
+    }
+
+    .lb-rank-2 {
+      background: linear-gradient(135deg, #9ca3af, #d1d5db);
+      color: #000;
+    }
+
+    .lb-rank-3 {
+      background: linear-gradient(135deg, #cd7c4d, #f0965d);
+      color: #000;
+    }
+
+    .lb-rank-other {
+      background: var(--glass2);
+      color: var(--muted);
+    }
+
+    .lb-icon {
+      font-size: 1.4rem;
+      flex-shrink: 0;
+    }
+
+    .lb-info {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .lb-name {
+      font-family: 'Syne', sans-serif;
+      font-weight: 700;
+      font-size: 0.88rem;
+    }
+
+    .lb-cat {
+      font-size: 0.73rem;
+      color: var(--muted);
+    }
+
+    .lb-votes {
+      font-size: 0.8rem;
+      color: var(--primary2);
+      font-weight: 600;
+    }
+
+    .lb-bar-wrap {
+      width: 80px;
+      background: var(--glass2);
+      border-radius: 100px;
+      height: 5px;
+      overflow: hidden;
+    }
+
+    .lb-bar {
+      height: 100%;
+      background: linear-gradient(90deg, var(--primary), var(--accent));
+      border-radius: 100px;
+    }
+
+    /* BLOG */
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1.2rem;
+    }
+
+    .blog-card {
+      background: var(--glass);
+      border: 1px solid var(--border);
+      border-radius: var(--card-r);
+      overflow: hidden;
+      transition: var(--trans);
+      cursor: pointer;
+    }
+
+    .blog-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(124, 92, 252, 0.4);
+    }
+
+    .blog-thumb {
+      height: 160px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .blog-body {
+      padding: 1.2rem;
+    }
+
+    .blog-tag {
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--primary2);
+      margin-bottom: 0.5rem;
+    }
+
+    .blog-title {
+      font-family: 'Syne', sans-serif;
+      font-weight: 700;
+      font-size: 0.95rem;
+      line-height: 1.4;
+      margin-bottom: 0.5rem;
+    }
+
+    .blog-meta {
+      font-size: 0.75rem;
+      color: var(--muted);
+    }
+
+    /* NEWSLETTER */
+    .newsletter-box {
+      background: var(--glass);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 3rem 2rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .newsletter-bg {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+      background: radial-gradient(ellipse at center, rgba(124, 92, 252, 0.15), transparent 70%);
+    }
+
+    .newsletter-box>* {
+      position: relative;
+      z-index: 1;
+    }
+
+    .newsletter-title {
+      font-size: 1.8rem;
+      font-weight: 800;
+      margin-bottom: 0.6rem;
+    }
+
+    .newsletter-sub {
+      color: var(--muted);
+      margin-bottom: 1.8rem;
+    }
+
+    .newsletter-form {
+      display: flex;
+      max-width: 440px;
+      margin: 0 auto;
+      gap: 0;
+      background: var(--glass2);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .newsletter-form input {
+      flex: 1;
+      background: none;
+      border: none;
+      outline: none;
+      padding: 0.85rem 1.2rem;
+      color: var(--text);
+      font-size: 0.9rem;
+      font-family: 'DM Sans', sans-serif;
+    }
+
+    .newsletter-form input::placeholder {
+      color: var(--muted);
+    }
+
+    .newsletter-form button {
+      background: linear-gradient(135deg, var(--primary), var(--primary2));
+      border: none;
+      color: #fff;
+      padding: 0 1.4rem;
+      font-weight: 700;
+      cursor: pointer;
+      font-family: 'Syne', sans-serif;
+      font-size: 0.88rem;
+      white-space: nowrap;
+      transition: var(--trans);
+    }
+
+    .newsletter-form button:hover {
+      opacity: 0.85;
+    }
+
+    /* SUBMIT FORM */
+    .submit-form {
+      max-width: 600px;
+      margin: 0 auto;
+      background: var(--glass);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 2.5rem;
+    }
+
+    .form-group {
+      margin-bottom: 1.2rem;
+    }
+
+    .form-label {
+      display: block;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+    .form-input,
+    .form-select,
+    .form-textarea {
+      width: 100%;
+      background: var(--glass2);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 0.8rem 1rem;
+      color: var(--text);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.9rem;
+      outline: none;
+      transition: var(--trans);
+    }
+
+    .form-input:focus,
+    .form-select:focus,
+    .form-textarea:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(124, 92, 252, 0.15);
+    }
+
+    .form-select {
+      cursor: pointer;
+    }
+
+    .form-textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    /* FILTERS */
+    .filters {
+      display: flex;
+      gap: 0.6rem;
+      flex-wrap: wrap;
+      margin-bottom: 2rem;
+    }
+
+    .filter-btn {
+      background: var(--glass);
+      border: 1px solid var(--border);
+      color: var(--muted);
+      border-radius: 100px;
+      padding: 0.4rem 1rem;
+      font-size: 0.8rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: var(--trans);
+    }
+
+    .filter-btn:hover,
+    .filter-btn.active {
+      background: rgba(124, 92, 252, 0.15);
+      border-color: var(--primary);
+      color: var(--text);
+    }
+
+    /* TAB NAV */
+    .tab-nav {
+      display: flex;
+      gap: 0.5rem;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 2rem;
+      overflow-x: auto;
+      padding-bottom: 0;
+    }
+
+    .tab-btn {
+      background: none;
+      border: none;
+      color: var(--muted);
+      padding: 0.7rem 1.1rem;
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      border-bottom: 2px solid transparent;
+      transition: var(--trans);
+      white-space: nowrap;
+      font-family: 'Syne', sans-serif;
+    }
+
+    .tab-btn:hover {
+      color: var(--text);
+    }
+
+    .tab-btn.active {
+      color: var(--primary2);
+      border-bottom-color: var(--primary2);
+    }
+
+    .tab-content {
+      display: none;
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+
+    /* RANDOM PROMPT */
+    .random-prompt-box {
+      background: var(--glass);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .random-prompt-box::before {
+      content: '';
+      position: absolute;
+      top: -2px;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, var(--primary), var(--accent), var(--primary2));
+    }
+
+    .random-prompt-label {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--accent);
+      margin-bottom: 0.7rem;
+    }
+
+    .random-prompt-text {
+      font-size: 0.95rem;
+      color: var(--text);
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+
+    .random-actions {
+      display: flex;
+      gap: 0.7rem;
+      flex-wrap: wrap;
+    }
+
+    /* SECTION BG ALT */
+    .bg-alt {
+      background: var(--bg2);
+    }
+
+    .bg-alt2 {
+      background: var(--bg3);
+    }
+
+    /* FOOTER */
+    footer {
+      background: var(--bg2);
+      border-top: 1px solid var(--border);
+      padding: 3rem 1.5rem 2rem;
+    }
+
+    .footer-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 2rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .footer-brand {}
+
+    .footer-logo {
+      font-family: 'Syne', sans-serif;
+      font-size: 1.3rem;
+      font-weight: 800;
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 0.8rem;
+    }
+
+    .footer-desc {
+      font-size: 0.83rem;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    .footer-heading {
+      font-family: 'Syne', sans-serif;
+      font-weight: 700;
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+    }
+
+    .footer-links {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .footer-links a {
+      font-size: 0.83rem;
+      color: var(--muted);
+      transition: var(--trans);
+    }
+
+    .footer-links a:hover {
+      color: var(--text);
+      padding-left: 4px;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid var(--border);
+      padding-top: 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: gap;
+      gap: 1rem;
+    }
+
+    .footer-copy {
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+
+    .footer-socials {
+      display: flex;
+      gap: 0.7rem;
+    }
+
+    .social-btn {
+      width: 36px;
+      height: 36px;
+      border-radius: 10px;
+      background: var(--glass);
+      border: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.9rem;
+      color: var(--muted);
+      transition: var(--trans);
+      cursor: pointer;
+    }
+
+    .social-btn:hover {
+      background: var(--glass2);
+      color: var(--text);
+      border-color: var(--primary);
+    }
+
+    /* MODAL */
+    .modal-overlay {
+      position: fixed;
+      inset: 0;
+      z-index: 2000;
+      background: rgba(0, 0, 0, 0.85);
+      backdrop-filter: blur(6px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s;
+    }
+
+    .modal-overlay.open {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .modal {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      max-width: 700px;
+      width: 100%;
+      max-height: 90vh;
+      overflow-y: auto;
+      transform: scale(0.95);
+      transition: transform 0.3s;
+    }
+
+    .modal-overlay.open .modal {
+      transform: scale(1);
+    }
+
+    .modal-header {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 1.5rem;
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      background: var(--bg2);
+      z-index: 1;
+    }
+
+    .modal-close {
+      margin-left: auto;
+      background: var(--glass);
+      border: 1px solid var(--border);
+      color: var(--muted);
+      border-radius: 8px;
+      width: 36px;
+      height: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: var(--trans);
+      font-size: 1.1rem;
+    }
+
+    .modal-close:hover {
+      color: var(--text);
+      background: var(--glass2);
+    }
+
+    .modal-body {
+      padding: 1.5rem;
+    }
+
+    .modal-icon {
+      font-size: 2.5rem;
+    }
+
+    .modal-title {
+      font-family: 'Syne', sans-serif;
+      font-weight: 800;
+      font-size: 1.4rem;
+    }
+
+    .modal-subtitle {
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+
+    .modal-features {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      margin: 1.2rem 0;
+    }
+
+    .modal-features li {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.6rem;
+      font-size: 0.88rem;
+      color: var(--muted);
+    }
+
+    .modal-features li::before {
+      content: '✦';
+      color: var(--primary2);
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    .pros-cons {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin: 1.2rem 0;
+    }
+
+    .pros-card {
+      background: rgba(34, 197, 94, 0.08);
+      border: 1px solid rgba(34, 197, 94, 0.2);
+      border-radius: 12px;
+      padding: 1rem;
+    }
+
+    .cons-card {
+      background: rgba(239, 68, 68, 0.08);
+      border: 1px solid rgba(239, 68, 68, 0.2);
+      border-radius: 12px;
+      padding: 1rem;
+    }
+
+    .pros-card h4 {
+      color: #4ade80;
+      font-family: 'Syne', sans-serif;
+      font-size: 0.85rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .cons-card h4 {
+      color: #f87171;
+      font-family: 'Syne', sans-serif;
+      font-size: 0.85rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .pros-card li,
+    .cons-card li {
+      font-size: 0.8rem;
+      color: var(--muted);
+      list-style: none;
+      padding: 0.2rem 0;
+    }
+
+    .btn-visit {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: linear-gradient(135deg, var(--primary), var(--primary2));
+      color: #fff;
+      border: none;
+      border-radius: 12px;
+      padding: 0.7rem 1.6rem;
+      font-size: 0.9rem;
+      font-weight: 700;
+      cursor: pointer;
+      text-decoration: none;
+      font-family: 'Syne', sans-serif;
+      transition: var(--trans);
+      margin-top: 1rem;
+    }
+
+    .btn-visit:hover {
+      opacity: 0.85;
+      transform: translateY(-2px);
+    }
+
+    /* AD PLACEHOLDER */
+    .ad-box {
+      background: var(--glass);
+      border: 1px dashed var(--border);
+      border-radius: 12px;
+      padding: 1rem;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.75rem;
+      margin: 1.5rem 0;
+    }
+
+    /* TOAST */
+    .toast {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      z-index: 3000;
+      background: var(--bg2);
+      border: 1px solid rgba(34, 211, 238, 0.4);
+      border-radius: 12px;
+      padding: 0.8rem 1.4rem;
+      display: flex;
+      align-items: center;
+      gap: 0.7rem;
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--accent);
+      transform: translateY(80px);
+      opacity: 0;
+      transition: all 0.4s cubic-bezier(.4, 0, .2, 1);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+    }
+
+    .toast.show {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    /* SEARCH RESULTS */
+    .search-results {
+      position: absolute;
+      top: calc(100% + 8px);
+      left: 0;
+      right: 0;
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 0.8rem;
+      max-height: 320px;
+      overflow-y: auto;
+      z-index: 100;
+      display: none;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+    }
+
+    .search-results.visible {
+      display: block;
+    }
+
+    .search-result-item {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      padding: 0.6rem 0.8rem;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: var(--trans);
+    }
+
+    .search-result-item:hover {
+      background: var(--glass2);
+    }
+
+    .search-result-icon {
+      font-size: 1.2rem;
+    }
+
+    .search-result-name {
+      font-weight: 600;
+      font-size: 0.88rem;
+    }
+
+    .search-result-type {
+      font-size: 0.73rem;
+      color: var(--muted);
+    }
+
+    .hero-search-wrap {
+      position: relative;
+      max-width: 560px;
+      margin: 0 auto 2rem;
+      animation: fadeUp 0.7s ease both 0.3s;
+    }
+
+    .hero-search-wrap .hero-search {
+      margin: 0;
+    }
+
+    /* BOOKMARK BTN */
+    .btn-bookmark {
+      background: var(--glass);
+      border: 1px solid var(--border);
+      color: var(--muted);
+      border-radius: 8px;
+      padding: 0.38rem 0.7rem;
+      font-size: 0.8rem;
+      cursor: pointer;
+      transition: var(--trans);
+    }
+
+    .btn-bookmark.saved {
+      color: #fbbf24;
+      border-color: rgba(251, 191, 36, 0.4);
+      background: rgba(251, 191, 36, 0.08);
+    }
+
+    .btn-bookmark:hover {
+      color: #fbbf24;
+    }
+
+    /* PAGES */
+    .page {
+      display: none;
+    }
+
+    .page.active {
+      display: block;
+    }
+
+    /* AOS animate */
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media (max-width: 900px) {
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .nav-links {
+        display: none;
+      }
+
+      .hamburger {
+        display: flex;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .tools-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .prompts-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .blog-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .cats-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      section {
+        padding: 3.5rem 1rem;
+      }
+
+      .pros-cons {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    #sparkCanvas {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      perspective: 1000px;
+    }
+
+    /* glow overlay */
+    .hero::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at center, rgba(124, 92, 252, 0.15), transparent 70%);
+      mix-blend-mode: screen;
+      animation: glowPulse 4s ease-in-out infinite;
+    }
+
+    @keyframes glowPulse {
+
+      0%,
+      100% {
+        opacity: 0.6;
+      }
+
+      50% {
+        opacity: 1;
+      }
+    }
+
+    /* smooth background movement */
+    .hero-bg {
+      animation: bgMove 12s ease-in-out infinite alternate;
+    }
+
+    @keyframes bgMove {
+      0% {
+        transform: translateY(0px) scale(1);
+      }
+
+      100% {
+        transform: translateY(-40px) scale(1.05);
+      }
+    }
+    .wa-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+}
+
+.wa-icon img {
+  width: 55px;
+  height: 55px;
+  border-radius:;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+  transition: 0.3s;
+}
+
+.wa-icon img:hover {
+  transform: scale(1.1);
+}
+  </style>
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-logo">Zentivra</div>
+    <ul class="nav-links">
+      <li><a href="#" onclick="showPage('home')">Home</a></li>
+      <li><a href="#" onclick="showPage('tools')">AI Tools</a></li>
+      <li><a href="#" onclick="showPage('prompts')">Prompts</a></li>
+      <li><a href="#" onclick="showPage('categories')">Categories</a></li>
+      <li><a href="#" onclick="showPage('trending')">Trending</a></li>
+      <li><a href="#" onclick="showPage('blog')">Blog</a></li>
+      <li><a href="#" onclick="showPage('submit')">Submit Tool</a></li>
+      <li><a href="#" onclick="showPage('about')">About</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="btn-dark-toggle" id="themeToggle" onclick="toggleTheme()" title="Toggle theme">🌙</button>
+      <button class="btn-nav" onclick="showPage('submit')">+ Submit Tool</button>
+      <button class="hamburger" onclick="toggleMobileMenu()" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#" onclick="showPage('home');closeMobile()">🏠 Home</a>
+    <a href="#" onclick="showPage('tools');closeMobile()">🛠 AI Tools</a>
+    <a href="#" onclick="showPage('prompts');closeMobile()">💬 Prompt Library</a>
+    <a href="#" onclick="showPage('categories');closeMobile()">📂 Categories</a>
+    <a href="#" onclick="showPage('trending');closeMobile()">🔥 Trending</a>
+    <a href="#" onclick="showPage('blog');closeMobile()">📝 Blog</a>
+    <a href="#" onclick="showPage('submit');closeMobile()">➕ Submit Tool</a>
+    <a href="#" onclick="showPage('about');closeMobile()">ℹ️ About</a>
+    <a href="#" onclick="showPage('contact');closeMobile()">📬 Contact</a>
+  </div>
+
+  <!-- TOAST -->
+  <div class="toast" id="toast">✓ Copied to clipboard!</div>
+
+  <!-- TOOL MODAL -->
+  <div class="modal-overlay" id="toolModal" onclick="closeModal(event)">
+    <div class="modal" id="modalContent"></div>
+  </div>
+
+  <!-- PAGES WRAPPER -->
+  <div id="pagesWrapper">
+
+    <!-- ===== HOME PAGE ===== -->
+    <div class="page active" id="page-home">
+
+      <!-- HERO -->
+      <section class="hero" style="padding-top:5rem;">
+        <canvas id="sparkCanvas"></canvas>
+        <div class="hero-bg"></div>
+        <div class="hero-grid"></div>
+        <div class="hero-orb hero-orb-1"></div>
+        <div class="hero-orb hero-orb-2"></div>
+        <div class="hero-content">
+          <div class="nav-user" id="userNameDisplay" style="font-family: nicholas;font-size: 30px;"></div>
+          <div class="hero-badge">🚀 <span>Updated 2026</span> — 120+ Tools · 350+ Prompts</div>
+          <h1 class="hero-title">
+            Discover <span class="grad">100+ Powerful</span><br>AI Tools &amp; 300+ Ready<br>AI Prompts
+          </h1>
+          <p class="hero-sub">Find the best AI tools for writing, image generation, coding, video, marketing and
+            productivity — all in one place.</p>
+          <div class="hero-search-wrap">
+            <div class="hero-search">
+              <input type="text" id="heroSearch" placeholder="Search tools, prompts, categories..."
+                oninput="handleHeroSearch(this.value)" autocomplete="off">
+              <button onclick="doSearch()">Search</button>
+            </div>
+            <div class="search-results" id="searchResults"></div>
+          </div>
+          <div class="hero-btns">
+            <button class="btn-primary" onclick="showPage('tools')">🛠 Explore AI Tools</button>
+            <button class="btn-outline" onclick="showPage('prompts')">💬 Browse Prompts</button>
+          </div>
+          <div class="hero-stats">
+            <div class="stat">
+              <div class="stat-num">120+</div>
+              <div class="stat-label">AI Tools Listed</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num">350+</div>
+              <div class="stat-label">Ready Prompts</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num">15</div>
+              <div class="stat-label">Categories</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num">50K+</div>
+              <div class="stat-label">Monthly Users</div>
+            </div>
+          </div>
+        </div>
+        
+      </section>
+
+      <!-- AD BANNER -->
+      <div class="section-inner" style="max-width:1200px;margin:0 auto;padding:0 1.5rem;">
+        <div class="ad-box"><!--ads--></div>
+      </div>
+       <div class="section-inner" style="max-width:1200px;margin:0 auto;padding:0 1.5rem;">
+        <section class="ai-guide-section">
+  <div class="ai-container">
+    
+    <h1>AI Tool Guide</h1>
+    <p class="subtitle">
+      Copy this smart prompt & Read and Enter tool name in ChatGPT
+    </p>
+
+    <div class="prompt-box">
+      
+      <!-- Preview -->
+      <div id="previewText">
+        You are an expert AI Tools Guide Generator...
+      </div>
+
+      <!-- Full Prompt (Hidden) -->
+      <textarea id="fullPrompt">
+You are an expert AI Tools Guide Generator.
+
+Tool Name[Enter]. Your job is to generate a complete, easy-to-understand guide for that tool.
+
+Rules:
+- Response should be available in BOTH English and Telugu.
+- Keep language simple and beginner-friendly.
+- Format the output clearly with headings and emojis.
+- Make it look like a professional guide/manual.
+
+Output format:
+
+1. Tool Name
+2. 🎯 Purpose
+3. 🧠 What You Can Do
+4. ⚙️ How It Works
+5. 🛠️ Step-by-Step Guide
+6. 🧩 Real Example
+7. 🚀 Pro Tips
+8. ⚠️ Limitations
+9. 💰 Free or Paid
+10. 🏁 Final Verdict
+
+Important:
+- First English, then Telugu
+- Do not skip any section
+      </textarea>
+
+      <button onclick="copyPrompt()">📋 Copy Prompt</button>
+
+    </div>
+
+  </div>
+</section>
+
+<style>
+.ai-guide-section {
+  padding: 60px 20px;
+  color: white;
+  text-align: center;
+}
+
+.ai-container {
+  max-width: 900px;
+  margin: auto;
+}
+.ai-container h1{
+  font-family: sans-serif; 
+}
+
+.ai-guide-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  opacity: 0.8;
+  margin-bottom: 30px;
+}
+
+.prompt-box {
+  background: rgba(255,255,255,0.1);
+  padding: 20px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+}
+
+/* Preview only */
+#previewText {
+  background: #fff;
+  color: #333;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: left;
+  height: 60px;
+  overflow: hidden;
+  font-size: 14px;
+}
+
+/* Hidden full prompt */
+#fullPrompt {
+  position: absolute;
+  left: -9999px;
+}
+
+button {
+  margin-top: 15px;
+  padding: 12px 20px;
+  background: #ff7a18;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background: #ff5200;
+}
+</style>
+
+<script>
+function copyPrompt() {
+  const full = document.getElementById("fullPrompt");
+  full.select();
+  document.execCommand("copy");
+
+  // Show full prompt after click
+  document.getElementById("previewText").innerText = full.value;
+
+  alert("Full prompt copied! Paste it in ChatGPT.");
+}
+</script>
+       </div>
+
+      <!-- TRENDING TOOLS -->
+      <section id="trending-home">
+        <div class="section-inner">
+          <div class="section-header reveal">
+            <div class="section-tag">🔥 Hot Right Now</div>
+            <h2 class="section-title">Trending AI Tools</h2>
+            <p class="section-sub">The most popular AI tools used by millions worldwide</p>
+          </div>
+          <div class="tools-grid" id="homeTrendingGrid"></div>
+          <div style="text-align:center;margin-top:2rem;">
+            <button class="btn-outline" onclick="showPage('tools')">View All 120+ Tools →</button>
+          </div>
+        </div>
+        
+      </section>
+
+      <!-- CATEGORIES -->
+      <section class="bg-alt">
+        <div class="section-inner">
+          <div class="section-header reveal">
+            <div class="section-tag">📂 Browse by Type</div>
+            <h2 class="section-title">Explore Categories</h2>
+            <p class="section-sub">Find AI tools organized by what you need to create</p>
+          </div>
+          <div class="cats-grid" id="homeCatsGrid"></div>
+        </div>
+      </section>
+
+      <!-- DAILY SECTION -->
+      <section>
+        <div class="section-inner">
+          <div class="section-header reveal">
+            <div class="section-tag">📅 Daily Picks</div>
+            <h2 class="section-title">Today's Highlights</h2>
+          </div>
+          <div class="daily-grid">
+            <div class="daily-card">
+              <div class="daily-card-bg"></div>
+              <div class="daily-label"><span class="daily-label-dot"></span> Tool of the Day</div>
+              <div id="toolOfDay"></div>
+            </div>
+            <div class="daily-card" style="background:var(--glass);border:1px solid var(--border);">
+              <div class="daily-label" style="color:var(--accent)"><span class="daily-label-dot"
+                  style="background:var(--accent);box-shadow:0 0 8px var(--accent)"></span> Prompt of the Day</div>
+              <div id="promptOfDay"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- POPULAR PROMPTS -->
+      <section class="bg-alt">
+        <div class="section-inner">
+          <div class="section-header reveal">
+            <div class="section-tag">✨ Ready to Copy</div>
+            <h2 class="section-title">Popular Prompt Templates</h2>
+            <p class="section-sub">Copy-paste prompts that actually work — updated weekly</p>
+          </div>
+          <div class="prompts-grid" id="homePromptsGrid"></div>
+          <div style="text-align:center;margin-top:2rem;">
+            <button class="btn-primary" onclick="showPage('prompts')">Explore All 350+ Prompts →</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- LEADERBOARD -->
+      <section>
+        <div class="section-inner">
+          <div class="section-header reveal">
+            <div class="section-tag">🏆 Top Rated</div>
+            <h2 class="section-title">AI Tools Leaderboard</h2>
+            <p class="section-sub">Ranked by community votes and usage</p>
+          </div>
+          <div class="leaderboard" id="leaderboard"></div>
+        </div>
+      </section>
+
+      <!-- FEATURED TOOLS -->
+      <section class="bg-alt">
+        <div class="section-inner">
+          <div class="section-header reveal">
+            <div class="section-tag">⭐ Editor's Choice</div>
+            <h2 class="section-title">Featured AI Tools</h2>
+            <p class="section-sub">Hand-picked tools with exceptional quality and value</p>
+          </div>
+          <div class="tools-grid" id="featuredGrid"></div>
+        </div>
+      </section>
+
+      <!-- BLOG -->
+      <section>
+        <div class="section-inner">
+          <div class="section-header reveal">
+            <div class="section-tag">📝 Latest Articles</div>
+            <h2 class="section-title">From the Blog</h2>
+          </div>
+          <div class="blog-grid" id="homeBlogGrid"></div>
+          <div style="text-align:center;margin-top:2rem;">
+            <button class="btn-outline" onclick="showPage('blog')">Read All Articles →</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- NEWSLETTER -->
+      <section class="bg-alt">
+        <div class="section-inner">
+          <div class="newsletter-box reveal">
+            <div class="newsletter-bg"></div>
+            <div style="font-size:2.5rem;margin-bottom:1rem;">📬</div>
+            <h2 class="newsletter-title">Stay Ahead of the AI Curve</h2>
+            <p class="newsletter-sub">Get the latest AI tools, prompts, and tips delivered to your inbox every week.
+              Join 50,000+ subscribers.</p>
+            <div class="newsletter-form">
+              <input type="email" placeholder="your@email.com">
+              <button onclick="subscribeNewsletter()">Subscribe Free</button>
+            </div>
+            <p style="font-size:0.75rem;color:var(--muted);margin-top:1rem;">No spam. Unsubscribe anytime. Also join our
+              <a href="#" style="color:var(--primary2)">Telegram channel →</a>
+            </p>
+          </div>
+        </div>
+      </section>
+
+    </div><!-- END HOME PAGE -->
+
+
+    <!-- ===== TOOLS PAGE ===== -->
+    <div class="page" id="page-tools">
+      <section style="padding-top:6rem;">
+        <div class="section-inner">
+          <div class="section-header">
+            <div class="section-tag">🛠 Full Directory</div>
+            <h1 class="section-title">AI Tools Directory</h1>
+            <p class="section-sub">120+ tools across 10 categories. Free, freemium, and paid.</p>
+          </div>
+          <div class="filters" id="toolFilters">
+            <button class="filter-btn active" onclick="filterTools('all', this)">All Tools</button>
+            <button class="filter-btn" onclick="filterTools('Free', this)">🆓 Free</button>
+            <button class="filter-btn" onclick="filterTools('Trending', this)">🔥 Trending</button>
+            <button class="filter-btn" onclick="filterTools('AI Chatbots', this)">💬 Chatbots</button>
+            <button class="filter-btn" onclick="filterTools('Image AI', this)">🎨 Image AI</button>
+            <button class="filter-btn" onclick="filterTools('Writing AI', this)">✍️ Writing</button>
+            <button class="filter-btn" onclick="filterTools('Coding AI', this)">💻 Coding</button>
+            <button class="filter-btn" onclick="filterTools('Video AI', this)">🎬 Video</button>
+            <button class="filter-btn" onclick="filterTools('Voice AI', this)">🎙️ Voice</button>
+            <button class="filter-btn" onclick="filterTools('Design AI', this)">🖌️ Design</button>
+            <button class="filter-btn" onclick="filterTools('Music AI', this)">🎵 Music</button>
+            <button class="filter-btn" onclick="filterTools('Student AI', this)">📚 Student</button>
+            <button class="filter-btn" onclick="filterTools('Marketing AI', this)">📣 Marketing</button>
+          </div>
+          <div class="ad-box">📢 Advertisement (728×90)</div>
+          <div class="tools-grid" id="allToolsGrid"></div>
+        </div>
+      </section>
+    </div><!-- END TOOLS PAGE -->
+
+
+    <!-- ===== PROMPTS PAGE ===== -->
+    <div class="page" id="page-prompts">
+      <section style="padding-top:6rem;">
+        <div class="section-inner">
+          <div class="section-header">
+            <div class="section-tag">💬 Prompt Library</div>
+            <h1 class="section-title">350+ Ready AI Prompts</h1>
+            <p class="section-sub">Copy-paste prompts for every use case. Organized, tested, effective.</p>
+          </div>
+          <!-- RANDOM PROMPT -->
+          <div class="random-prompt-box">
+            <div class="random-prompt-label">✨ Random Prompt Generator</div>
+            <div class="random-prompt-text" id="randomPromptText">Click the button to generate a random prompt...</div>
+            <div class="random-actions">
+              <button class="btn-primary" onclick="generateRandomPrompt()">🎲 Random Prompt</button>
+              <button class="btn-copy" onclick="copyRandomPrompt()">📋 Copy Prompt</button>
+            </div>
+          </div>
+          <div class="tab-nav" id="promptTabs"></div>
+          <div id="promptTabContents"></div>
+        </div>
+      </section>
+    </div><!-- END PROMPTS PAGE -->
+
+
+    <!-- ===== CATEGORIES PAGE ===== -->
+    <div class="page" id="page-categories">
+      <section style="padding-top:6rem;">
+        <div class="section-inner">
+          <div class="section-header">
+            <div class="section-tag">📂 Browse</div>
+            <h1 class="section-title">All Categories</h1>
+          </div>
+          <div class="cats-grid" style="grid-template-columns: repeat(auto-fill, minmax(200px,1fr));" id="allCatsGrid">
+          </div>
+          <div style="margin-top:3rem;" id="catToolsSection"></div>
+        </div>
+      </section>
+    </div>
+
+
+    <!-- ===== TRENDING PAGE ===== -->
+    <div class="page" id="page-trending">
+      <section style="padding-top:6rem;">
+        <div class="section-inner">
+          <div class="section-header">
+            <div class="section-tag">🔥 Trending</div>
+            <h1 class="section-title">Trending AI Tools</h1>
+            <p class="section-sub">What the AI community is talking about right now</p>
+          </div>
+          <div class="tools-grid" id="trendingGrid"></div>
+          <div style="margin-top:3rem;">
+            <div class="section-header">
+              <div class="section-tag">📈 Leaderboard</div>
+              <h2 class="section-title">Top 10 Ranking</h2>
+            </div>
+            <div class="leaderboard" id="trendingLeaderboard"></div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+
+    <!-- ===== BLOG PAGE ===== -->
+    <div class="page" id="page-blog">
+      <section style="padding-top:6rem;">
+        <div class="section-inner">
+          <div class="section-header">
+            <div class="section-tag">📝 Articles</div>
+            <h1 class="section-title">AI Tools Blog</h1>
+            <p class="section-sub">In-depth guides, reviews, and tutorials about AI tools</p>
+          </div>
+          <div class="blog-grid" id="allBlogGrid"></div>
+        </div>
+      </section>
+    </div>
+
+
+    <!-- ===== SUBMIT PAGE ===== -->
+    <div class="page" id="page-submit">
+      <section style="padding-top:6rem;">
+        <div class="section-inner">
+          <div class="section-header">
+            <div class="section-tag">➕ Submit</div>
+            <h1 class="section-title">Submit an AI Tool</h1>
+            <p class="section-sub">Know a great AI tool we're missing? Submit it and reach thousands of AI enthusiasts.
+            </p>
+          </div>
+          <div class="submit-form">
+            <div class="form-group">
+              <label class="form-label">Tool Name *</label>
+              <input class="form-input" type="text" placeholder="e.g. ChatGPT, Midjourney...">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Website URL *</label>
+              <input class="form-input" type="url" placeholder="https://yourtool.com">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Category *</label>
+              <select class="form-select">
+                <option value="">Select category...</option>
+                <option>AI Chatbots</option>
+                <option>Image AI</option>
+                <option>Writing AI</option>
+                <option>Coding AI</option>
+                <option>Video AI</option>
+                <option>Voice AI</option>
+                <option>Design AI</option>
+                <option>Music AI</option>
+                <option>Student AI</option>
+                <option>Marketing AI</option>
+                <option>Productivity AI</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Description *</label>
+              <textarea class="form-textarea"
+                placeholder="Describe what this AI tool does and who it's for..."></textarea>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Pricing</label>
+              <select class="form-select">
+                <option>Free</option>
+                <option>Freemium</option>
+                <option>Paid</option>
+                <option>Free Trial</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Your Email (optional)</label>
+              <input class="form-input" type="email" placeholder="your@email.com">
+            </div>
+            <button class="btn-primary" style="width:100%;padding:0.9rem;" onclick="submitTool()">Submit Tool for Review
+              →</button>
+            <p style="font-size:0.78rem;color:var(--muted);text-align:center;margin-top:0.8rem;">Tools are reviewed
+              within 2–3 business days.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+
+    <!-- ===== ABOUT PAGE ===== -->
+    <div class="page" id="page-about">
+      <section style="padding-top:6rem;">
+        <div class="section-inner" style="max-width:720px;">
+          <div class="section-header">
+            <div class="section-tag">ℹ️ About Us</div>
+            <h1 class="section-title">About Zentivra</h1>
+          </div>
+          <div
+            style="background:var(--glass);border:1px solid var(--border);border-radius:20px;padding:2.5rem;line-height:1.8;">
+            <p style="color:var(--muted);margin-bottom:1.2rem;">Zentivra is the internet's most comprehensive
+              directory of artificial intelligence tools and prompt templates. We curate, test, and review the best AI
+              tools so you don't have to.</p>
+            <p style="color:var(--muted);margin-bottom:1.2rem;">Founded in 2024, our mission is to make AI accessible to
+              everyone — from students and creators to marketers and developers. Whether you're looking for the best
+              image generator, coding assistant, or the perfect prompt for your next project, we've got you covered.</p>
+            <h3 style="font-family:'Syne',sans-serif;font-weight:800;margin-bottom:0.8rem;">Our Mission</h3>
+            <p style="color:var(--muted);margin-bottom:1.2rem;">To democratize AI tool discovery and help people find
+              the right tools for their needs — completely free.</p>
+            <h3 style="font-family:'Syne',sans-serif;font-weight:800;margin-bottom:0.8rem;">What We Offer</h3>
+            <ul style="color:var(--muted);list-style:none;display:flex;flex-direction:column;gap:0.5rem;">
+              <li>✦ 120+ hand-curated AI tools with detailed reviews</li>
+              <li>✦ 350+ tested and optimized AI prompts</li>
+              <li>✦ Daily tool and prompt highlights</li>
+              <li>✦ Weekly newsletter with AI updates</li>
+              <li>✦ Community-powered ratings and reviews</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+
+
+    <!-- ===== CONTACT PAGE ===== -->
+    <div class="page" id="page-contact">
+      <section style="padding-top:6rem;">
+        <div class="section-inner" style="max-width:600px;">
+          <div class="section-header">
+            <div class="section-tag">📬 Contact</div>
+            <h1 class="section-title">Get In Touch</h1>
+            <p class="section-sub">Have a question, partnership idea, or found a great tool? We'd love to hear from you.
+            </p>
+          </div>
+          <div class="submit-form">
+            <div class="form-group"><label class="form-label">Your Name</label><input class="form-input" type="text"
+                placeholder="ex:pavan"></div>
+            <div class="form-group"><label class="form-label">Email *</label><input class="form-input" type="email"
+                placeholder="your@email.com"></div>
+            <div class="form-group"><label class="form-label">Subject</label><select class="form-select">
+                <option>General Inquiry</option>
+                <option>Submit a Tool</option>
+                <option>Partnership / Sponsorship</option>
+                <option>Bug Report</option>
+                <option>Other</option>
+              </select></div>
+            <div class="form-group"><label class="form-label">Message *</label><textarea class="form-textarea"
+                placeholder="Your message..."></textarea></div>
+            <button class="btn-primary" style="width:100%;padding:0.9rem;" onclick="sendMessage()">Send Message
+              →</button>
+          </div>
+        </div>
+      </section>
+    </div>
+     <a href="https://chat.whatsapp.com/BxTpejKQgEi6EIBx6D6yBK?mode=gi_t" target="_blank" class="wa-icon">
+  <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+</a>
+  </div><!-- END PAGES WRAPPER -->
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">Zentivra</div>
+          <p class="footer-desc">The internet's most comprehensive AI tools directory. Discover, compare, and use the
+            best AI tools for every task.</p>
+          <div style="margin-top:1rem;display:flex;gap:0.5rem;flex-wrap:wrap;">
+            <span
+              style="font-size:0.72rem;background:rgba(124,92,252,0.15);border:1px solid rgba(124,92,252,0.2);border-radius:100px;padding:0.2rem 0.7rem;color:var(--primary2)">120+
+              Tools</span>
+            <span
+              style="font-size:0.72rem;background:rgba(34,211,238,0.1);border:1px solid rgba(34,211,238,0.2);border-radius:100px;padding:0.2rem 0.7rem;color:var(--accent)">350+
+              Prompts</span>
+            <span
+              style="font-size:0.72rem;background:rgba(240,171,252,0.1);border:1px solid rgba(240,171,252,0.2);border-radius:100px;padding:0.2rem 0.7rem;color:var(--accent2)">Free
+              Forever</span>
+          </div>
+        </div>
+        <div>
+          <div class="footer-heading">Quick Links</div>
+          <ul class="footer-links">
+            <li><a href="#" onclick="showPage('home')">Home</a></li>
+            <li><a href="#" onclick="showPage('tools')">AI Tools</a></li>
+            <li><a href="#" onclick="showPage('prompts')">Prompt Library</a></li>
+            <li><a href="#" onclick="showPage('trending')">Trending</a></li>
+            <li><a href="#" onclick="showPage('blog')">Blog</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-heading">Categories</div>
+          <ul class="footer-links">
+            <li><a href="#">AI Chatbots</a></li>
+            <li><a href="#">Image AI</a></li>
+            <li><a href="#">Writing AI</a></li>
+            <li><a href="#">Coding AI</a></li>
+            <li><a href="#">Video AI</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-heading">Company</div>
+          <ul class="footer-links">
+            <li><a href="#" onclick="showPage('about')">About</a></li>
+            <li><a href="#" onclick="showPage('contact')">Contact</a></li>
+            <li><a href="#" onclick="showPage('submit')">Submit Tool</a></li>
+            <li><a href="privacy policy.html">Privacy Policy</a></li>
+            <li><a href="terms and conditions.html">Terms and conditions</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-copy">© 2026 Zentivra. All rights reserved. Made with ❤️ for the AI community.</div>
+        <div class="footer-socials">
+          <div class="social-btn" title="Twitter/X">𝕏</div>
+          <div class="social-btn" title="Telegram">✈️</div>
+          <div class="social-btn" title="Instagram">📷</div>
+          <div class="social-btn" title="YouTube">▶️</div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // ============================================================
+    // DATA
+    // ============================================================
+    const TOOLS = [
+      { id: 1, name: 'ChatGPT', icon: '🤖', color: '#10a37f', category: 'AI Chatbots', desc: 'Most advanced conversational AI by OpenAI. Write, code, analyze, and brainstorm with GPT-4o.', rating: 4.9, trending: true, featured: true, free: true, url: 'https://chat.openai.com', features: ['GPT-4o model', 'Image understanding', 'Code interpreter', 'Plugin ecosystem'], pros: ['Best language understanding', 'Huge community', 'Constant updates'], cons: ['Free tier limited', 'Can hallucinate'] },
+      { id: 2, name: 'Midjourney', icon: '🎨', color: '#7c5cfc', category: 'Image AI', desc: 'Create stunning AI art and images from text prompts. Used by designers and artists worldwide.', rating: 4.8, trending: true, featured: true, free: false, url: 'https://midjourney.com', features: ['Photorealistic images', 'Artistic styles', 'V6 model', 'Discord bot'], pros: ['Best image quality', 'Huge style variety', 'Active community'], cons: ['Discord required', 'Paid only'] },
+      { id: 3, name: 'Claude', icon: '🧠', color: '#a855f7', category: 'AI Chatbots', desc: 'Anthropic\'s AI assistant with exceptional reasoning, analysis, and writing capabilities.', rating: 4.8, trending: true, featured: true, free: true, url: 'https://claude.ai', features: ['200K context window', 'Code & analysis', 'Document upload', 'Claude 3.5 Sonnet'], pros: ['Long context window', 'Very safe & accurate', 'Great for writing'], cons: ['Less plugins', 'Limited image gen'] },
+      { id: 4, name: 'Canva AI', icon: '🖌️', color: '#00c4cc', category: 'Design AI', desc: 'Design anything with AI-powered tools. Create graphics, presentations, videos, and more.', rating: 4.7, trending: true, featured: true, free: true, url: 'https://canva.com', features: ['Magic Design', 'AI image gen', 'Background remover', 'Brand kit'], pros: ['Very user friendly', 'Huge template library', 'Free tier great'], cons: ['AI less powerful', 'Export limits on free'] },
+      { id: 5, name: 'Leonardo AI', icon: '🦁', color: '#f59e0b', category: 'Image AI', desc: 'Professional AI image generation platform for game assets, concept art, and creative projects.', rating: 4.7, trending: true, featured: false, free: true, url: 'https://leonardo.ai', features: ['150 credits/day free', 'Custom model training', 'Video generation', '3D textures'], pros: ['Generous free tier', 'Game asset focused', 'High quality output'], cons: ['Learning curve', 'Interface complex'] },
+      { id: 6, name: 'Runway ML', icon: '🎬', color: '#ef4444', category: 'Video AI', desc: 'Gen-2 and Gen-3 AI video generation. Create stunning videos from text or images.', rating: 4.6, trending: true, featured: true, free: true, url: 'https://runwayml.com', features: ['Gen-3 Alpha', 'Text to video', 'Image to video', 'Video editing AI'], pros: ['Industry standard', 'Frequent updates', 'Multiple gen modes'], cons: ['Expensive', 'Limited free credits'] },
+      { id: 7, name: 'Perplexity AI', icon: '🔍', color: '#22d3ee', category: 'AI Chatbots', desc: 'AI-powered search engine that gives direct answers with real-time web sources.', rating: 4.7, trending: true, featured: false, free: true, url: 'https://perplexity.ai', features: ['Real-time web search', 'Source citations', 'Pro search', 'Focus modes'], pros: ['Always up-to-date', 'Sources cited', 'Free tier good'], cons: ['Less creative writing', 'Pro features paywalled'] },
+      { id: 8, name: 'GitHub Copilot', icon: '💻', color: '#6366f1', category: 'Coding AI', desc: 'AI pair programmer by GitHub. Get code suggestions in your IDE as you type.', rating: 4.8, featured: true, free: false, url: 'https://github.com/features/copilot', features: ['Code completion', 'Chat mode', 'Multi-language', 'IDE plugins'], pros: ['Best for coding', 'Context-aware', 'Works in VSCode'], cons: ['Paid subscription', 'Sometimes wrong'] },
+      { id: 9, name: 'ElevenLabs', icon: '🎙️', color: '#f97316', category: 'Voice AI', desc: 'Ultra-realistic AI voice generation and cloning. Create natural-sounding speech from text.', rating: 4.7, trending: true, free: true, url: 'https://elevenlabs.io', features: ['Voice cloning', '29 languages', 'Emotional control', 'API access'], pros: ['Most realistic voices', 'Easy voice cloning', 'Good API'], cons: ['Expensive for volume', 'Free tier limited'] },
+      { id: 10, name: 'Suno AI', icon: '🎵', color: '#ec4899', category: 'Music AI', desc: 'Create complete songs with vocals and instruments from a text prompt. AI music generation.', rating: 4.6, trending: true, free: true, url: 'https://suno.ai', features: ['Full song generation', 'Custom lyrics', 'Multiple genres', 'API beta'], pros: ['Amazing output quality', 'Very easy to use', 'Free tier generous'], cons: ['No stem separation', 'Copyright unclear'] },
+      { id: 11, name: 'Grammarly', icon: '✍️', color: '#15803d', category: 'Writing AI', desc: 'AI writing assistant that checks grammar, style, tone, and improves your writing instantly.', rating: 4.6, free: true, url: 'https://grammarly.com', features: ['Grammar check', 'Tone detection', 'Plagiarism check', 'Browser extension'], pros: ['Works everywhere', 'Very accurate', 'Free tier solid'], cons: ['Premium expensive', 'Can be overkill'] },
+      { id: 12, name: 'Copy.ai', icon: '📝', color: '#7c3aed', category: 'Writing AI', desc: 'AI copywriting tool for marketing content, social posts, emails, and product descriptions.', rating: 4.5, free: true, url: 'https://copy.ai', features: ['90+ templates', 'Blog wizard', 'Social copy', 'Brand voice'], pros: ['Marketing focused', 'Templates library', 'Free plan generous'], cons: ['Quality inconsistent', 'Long form needs editing'] },
+      { id: 13, name: 'Jasper AI', icon: '🦋', color: '#8b5cf6', category: 'Writing AI', desc: 'Enterprise AI writing platform for teams. Create blogs, ads, emails, and social content at scale.', rating: 4.5, free: false, url: 'https://jasper.ai', features: ['Brand voice', 'SEO mode', 'Team collaboration', '50+ templates'], pros: ['Enterprise grade', 'Great for teams', 'SEO integration'], cons: ['Very expensive', 'Overkill for individuals'] },
+      { id: 14, name: 'Stable Diffusion', icon: '🌊', color: '#3b82f6', category: 'Image AI', desc: 'Open-source AI image generator. Run locally or in the cloud for unlimited image creation.', rating: 4.7, free: true, url: 'https://stability.ai', features: ['100% free/open source', 'Local deployment', 'Custom models', 'ComfyUI support'], pros: ['Completely free', 'Highly customizable', 'Huge model library'], cons: ['Technical setup', 'Needs good GPU'] },
+      { id: 15, name: 'DALL·E 3', icon: '🖼️', color: '#10b981', category: 'Image AI', desc: 'OpenAI\'s DALL·E 3 creates accurate images from detailed text prompts via ChatGPT.', rating: 4.6, free: true, url: 'https://openai.com/dall-e-3', features: ['Text accuracy', 'ChatGPT integration', 'Photorealistic', 'Illustration styles'], pros: ['Very text-accurate', 'Easy to use', 'No filters'], cons: ['Costs credits', 'Less artistic control'] },
+      { id: 16, name: 'Cursor IDE', icon: '🖱️', color: '#6366f1', category: 'Coding AI', desc: 'AI-first code editor built on VSCode. Chat with your codebase, generate code, fix bugs instantly.', rating: 4.8, trending: true, free: true, url: 'https://cursor.sh', features: ['Codebase chat', 'Auto-complete', 'Claude & GPT-4', 'Terminal AI'], pros: ['Best AI IDE', 'Codebase aware', 'Fast and accurate'], cons: ['New tool', 'Some instability'] },
+      { id: 17, name: 'Notion AI', icon: '📋', color: '#000000', category: 'Productivity AI', desc: 'AI writing and thinking assistant built into Notion. Summarize, generate, and organize content.', rating: 4.5, free: false, url: 'https://notion.so', features: ['Page summarization', 'AI writing', 'Database AI', 'Q&A on docs'], pros: ['Seamless integration', 'Great for teams', 'All-in-one workspace'], cons: ['Notion subscription req', 'Limited AI outside notion'] },
+      { id: 18, name: 'Kling AI', icon: '🎞️', color: '#dc2626', category: 'Video AI', desc: 'Chinese AI video generation platform with high-quality, long-duration video creation up to 2 mins.', rating: 4.5, trending: true, free: true, url: 'https://klingai.com', features: ['2 min videos', 'HD quality', 'Motion brush', 'Camera controls'], pros: ['Long video duration', 'Free tier available', 'High quality'], cons: ['Sometimes slow', 'Watermark on free'] },
+      { id: 19, name: 'HeyGen', icon: '👤', color: '#8b5cf6', category: 'Video AI', desc: 'Create AI talking head videos and avatar videos. Perfect for marketing and corporate training.', rating: 4.5, free: false, url: 'https://heygen.com', features: ['100+ AI avatars', 'Video translation', 'Custom avatar', 'Studio quality'], pros: ['Professional quality', 'Easy to use', 'Multiple languages'], cons: ['Expensive', 'Limited free tier'] },
+      { id: 20, name: 'Gemini', icon: '♊', color: '#4285f4', category: 'AI Chatbots', desc: 'Google\'s most capable AI model. Multimodal reasoning, coding, and real-time Google integration.', rating: 4.7, trending: true, free: true, url: 'https://gemini.google.com', features: ['Google integration', '1M context', 'Code execution', 'Imagen 3'], pros: ['Free powerful tier', 'Google ecosystem', 'Real-time data'], cons: ['Less creative', 'Safety filters aggressive'] },
+      { id: 21, name: 'Luma AI', icon: '💡', color: '#f59e0b', category: 'Video AI', desc: 'Dream Machine — create smooth, cinematic AI videos from text and images.', rating: 4.6, trending: true, free: true, url: 'https://lumalabs.ai', features: ['Smooth motion', 'Cinematic quality', 'Text & image input', 'Loop generation'], pros: ['Smooth camera motion', 'Good free credits', 'Fast generation'], cons: ['Short videos only', 'Sometimes inaccurate'] },
+      { id: 22, name: 'Adobe Firefly', icon: '🔥', color: '#e07c4c', category: 'Image AI', desc: 'Adobe\'s AI image generation integrated into Photoshop, Illustrator, and the Creative Cloud suite.', rating: 4.5, free: true, url: 'https://adobe.com/firefly', features: ['Generative Fill', 'Text effects', 'Commercially safe', 'CC integration'], pros: ['Commercially safe', 'Photoshop integration', 'High quality'], cons: ['Adobe subscription', 'Less artistic freedom'] },
+      { id: 23, name: 'Pika Labs', icon: '⚡', color: '#fbbf24', category: 'Video AI', desc: 'Pika 2.0 — AI video generation and editing with remarkable motion quality and creative control.', rating: 4.5, free: true, url: 'https://pika.art', features: ['Pika 2.0', 'Modify region', 'Lip sync', 'SFX generation'], pros: ['Great free credits', 'Unique features', 'Discord community'], cons: ['Limited duration', 'Watermark free tier'] },
+      { id: 24, name: 'Writesonic', icon: '✏️', color: '#10b981', category: 'Writing AI', desc: 'AI content writer for SEO articles, landing pages, ads, and chatbots powered by GPT-4.', rating: 4.4, free: true, url: 'https://writesonic.com', features: ['Chatsonic', 'SEO optimizer', 'Botsonic', 'Brand voice'], pros: ['SEO focused', 'Multiple tools', 'Affordable'], cons: ['Quality varies', 'Interface cluttered'] },
+      { id: 25, name: 'Ideogram', icon: '💎', color: '#6366f1', category: 'Image AI', desc: 'AI image generation with exceptional text rendering inside images. Perfect for design projects.', rating: 4.6, trending: true, free: true, url: 'https://ideogram.ai', features: ['Text in images', 'Realistic style', 'Logo generation', 'Unlimited free'], pros: ['Best text in images', 'Very generous free tier', 'Fast generation'], cons: ['Less artistic styles', 'Newer platform'] },
+      { id: 26, name: 'Synthesia', icon: '🎭', color: '#3b82f6', category: 'Video AI', desc: 'Create professional AI avatar videos in 140+ languages without cameras or actors.', rating: 4.5, free: false, url: 'https://synthesia.io', features: ['160+ AI avatars', '140 languages', 'Custom avatars', 'Screen recording'], pros: ['Corporate standard', 'Easy to use', 'Many languages'], cons: ['Expensive', 'Avatars can look robotic'] },
+      { id: 27, name: 'Replicate', icon: '🔄', color: '#6b7280', category: 'Coding AI', desc: 'Run and fine-tune open-source AI models in the cloud via simple API. For developers.', rating: 4.5, free: true, url: 'https://replicate.com', features: ['1000s of models', 'Simple API', 'Fine-tuning', 'Pay per run'], pros: ['Huge model library', 'Easy API', 'Pay per use'], cons: ['Can get expensive', 'Technical knowledge needed'] },
+      { id: 28, name: 'Descript', icon: '🎧', color: '#8b5cf6', category: 'Voice AI', desc: 'AI-powered audio and video editor. Remove filler words, clone your voice, edit by transcript.', rating: 4.5, free: true, url: 'https://descript.com', features: ['Overdub voice clone', 'Filler word removal', 'Screen recording', 'Podcast editing'], pros: ['Unique transcript editing', 'Voice cloning', 'Good free tier'], cons: ['Learning curve', 'Rendering slow'] },
+      { id: 29, name: 'Murf AI', icon: '🔊', color: '#f97316', category: 'Voice AI', desc: 'Studio-quality AI voiceovers in 20+ languages for videos, podcasts, and presentations.', rating: 4.5, free: true, url: 'https://murf.ai', features: ['120+ voices', 'Pitch & emphasis', 'Video sync', 'API access'], pros: ['Professional quality', 'Studio features', 'Good free tier'], cons: ['Expensive pro plans', 'Voice cloning limited'] },
+      { id: 30, name: 'Fathom', icon: '📊', color: '#0ea5e9', category: 'Productivity AI', desc: 'Free AI meeting recorder and note-taker. Summarize Zoom, Meet, and Teams calls automatically.', rating: 4.7, free: true, url: 'https://fathom.video', features: ['Auto transcription', 'AI summaries', 'CRM sync', 'Unlimited free'], pros: ['Completely free', 'Very accurate', 'Instant summaries'], cons: ['Video call only', 'Limited integrations'] },
+      { id: 31, name: 'Krea AI', icon: '🌈', color: '#ec4899', category: 'Image AI', desc: 'Real-time AI image generation and enhancement. Generate and iterate visuals instantly.', rating: 4.5, free: true, url: 'https://krea.ai', features: ['Real-time generation', 'Enhance AI', 'Style transfer', 'Logo to image'], pros: ['Real-time generation', 'Very unique', 'Good free tier'], cons: ['Newer platform', 'Limited styles'] },
+      { id: 32, name: 'Otter.ai', icon: '🦦', color: '#3b82f6', category: 'Productivity AI', desc: 'AI meeting transcription and notes for Zoom, Google Meet and Teams. Real-time captions.', rating: 4.5, free: true, url: 'https://otter.ai', features: ['Real-time transcription', 'Meeting summaries', 'Action items', 'Team sharing'], pros: ['Very accurate', 'Real-time captions', 'Good free tier'], cons: ['300 min/month free', 'Privacy concerns'] },
+      { id: 33, name: 'v0 by Vercel', icon: '🎯', color: '#000000', category: 'Coding AI', desc: 'Generate React UI components from text descriptions. Build frontend code with AI instantly.', rating: 4.6, trending: true, free: true, url: 'https://v0.dev', features: ['React components', 'shadcn/ui', 'Tailwind', 'One-click deploy'], pros: ['Incredible UI output', 'Free tier available', 'Vercel integration'], cons: ['React focused only', 'Credits limited'] },
+      { id: 34, name: 'Opus Clip', icon: '✂️', color: '#7c3aed', category: 'Video AI', desc: 'AI video repurposing tool. Turn long videos into viral short clips for TikTok, Reels, Shorts.', rating: 4.5, free: true, url: 'https://opus.pro', features: ['Auto clip selection', 'Captions', 'B-roll', 'Virality score'], pros: ['Saves tons of time', 'Captions accurate', 'Good free tier'], cons: ['Clips not always ideal', 'Watermark on free'] },
+      { id: 35, name: 'Gamma', icon: '📑', color: '#6366f1', category: 'Productivity AI', desc: 'AI presentation and document builder. Create beautiful decks, docs, and webpages in minutes.', rating: 4.6, trending: true, free: true, url: 'https://gamma.app', features: ['AI slide generation', 'Web publishing', 'Templates', 'Collaboration'], pros: ['Very fast creation', 'Beautiful output', 'Free tier good'], cons: ['Less customization', 'Export limited on free'] },
+      { id: 36, name: 'Phind', icon: '🔎', color: '#8b5cf6', category: 'Coding AI', desc: 'AI search engine for developers. Get code answers with explanations and working examples.', rating: 4.5, free: true, url: 'https://phind.com', features: ['Code search', 'GPT-4 powered', 'Pair programming', 'VS Code extension'], pros: ['Free powerful model', 'Developer focused', 'Fast responses'], cons: ['Coding only', 'Less general knowledge'] },
+      { id: 37, name: 'Krisp', icon: '🔇', color: '#10b981', category: 'Voice AI', desc: 'AI noise cancellation for calls and recordings. Remove background noise in real-time.', rating: 4.6, free: true, url: 'https://krisp.ai', features: ['Noise cancellation', 'Echo removal', 'Meeting summaries', 'Speaker isolation'], pros: ['Works across all apps', 'Very effective', 'Good free tier'], cons: ['CPU intensive', 'Free tier limited'] },
+      { id: 38, name: 'Beautiful.ai', icon: '🎨', color: '#ec4899', category: 'Design AI', desc: 'AI-powered presentation software that automatically designs slides as you add content.', rating: 4.4, free: false, url: 'https://beautiful.ai', features: ['Smart templates', 'Auto-design', 'Team sharing', 'Presenter mode'], pros: ['Always looks good', 'Easy to use', 'Team features'], cons: ['Expensive', 'Less control'] },
+      { id: 39, name: 'Poe', icon: '🦋', color: '#7c5cfc', category: 'AI Chatbots', desc: 'Quora\'s platform to chat with multiple AI models. Access GPT-4, Claude, Gemini and more.', rating: 4.5, free: true, url: 'https://poe.com', features: ['Multiple AI models', 'Custom bots', 'Group chat', 'Mobile apps'], pros: ['Many models in one', 'Custom bots easy', 'Good free tier'], cons: ['Not all models current', 'Subscription for premium models'] },
+      { id: 40, name: 'Perchance', icon: '🎲', color: '#f59e0b', category: 'AI Chatbots', desc: 'Free AI text and image generator for creative writing, roleplay, and story generation.', rating: 4.3, free: true, url: 'https://perchance.org', features: ['Free unlimited', 'No account needed', 'Custom generators', 'API'], pros: ['Completely free', 'No sign-up', 'Creative freedom'], cons: ['Basic UI', 'Limited compared to paid'] },
+      { id: 41, name: 'Fireflies.ai', icon: '🌟', color: '#f97316', category: 'Productivity AI', desc: 'AI meeting notetaker that records, transcribes, and analyzes your meetings automatically.', rating: 4.6, free: true, url: 'https://fireflies.ai', features: ['Auto-join meetings', 'CRM integration', 'Smart search', 'Sentiment analysis'], pros: ['Works with all platforms', 'Smart analytics', 'Good free tier'], cons: ['Storage limits', 'Privacy concerns'] },
+      { id: 42, name: 'Codeium', icon: '⌨️', color: '#10b981', category: 'Coding AI', desc: 'Free AI code completion and chat for 70+ languages. Faster alternative to GitHub Copilot.', rating: 4.6, free: true, url: 'https://codeium.com', features: ['70+ languages', 'IDE plugins', 'Free forever', 'Fast completion'], pros: ['100% free', 'Very accurate', 'Many IDEs'], cons: ['Less context-aware', 'Newer platform'] },
+      { id: 43, name: 'Soundraw', icon: '🎶', color: '#8b5cf6', category: 'Music AI', desc: 'AI music generator for content creators. Generate royalty-free music for videos, streams, and podcasts.', rating: 4.4, free: false, url: 'https://soundraw.io', features: ['Royalty free', 'Custom length', 'Mood & genre', 'Stems export'], pros: ['Royalty free', 'Easy to use', 'Professional quality'], cons: ['Paid only', 'Limited free trial'] },
+      { id: 44, name: 'Udio', icon: '🎸', color: '#ec4899', category: 'Music AI', desc: 'High-fidelity AI music generation. Create full songs with lyrics, vocals, and complex arrangements.', rating: 4.5, trending: true, free: true, url: 'https://udio.com', features: ['Full song gen', 'Lyrics input', 'Remix function', 'HD audio'], pros: ['High audio quality', 'Free tier available', 'Unique outputs'], cons: ['Slow generation', 'Copyright unclear'] },
+      { id: 45, name: 'Notion AI', icon: '🗒️', color: '#374151', category: 'Student AI', desc: 'AI writing and research assistant inside Notion workspace. Summarize notes and create study guides.', rating: 4.5, free: false, url: 'https://notion.so', features: ['AI summarize', 'Q&A on notes', 'Auto-fill databases', 'Translate'], pros: ['Seamless in workspace', 'Great for study notes', 'Collaborative'], cons: ['Requires Notion sub', 'Not standalone AI'] },
+      { id: 46, name: 'Quillbot', icon: '🦜', color: '#10b981', category: 'Writing AI', desc: 'AI paraphrasing and rewriting tool. Improve your writing, check grammar, and avoid plagiarism.', rating: 4.5, free: true, url: 'https://quillbot.com', features: ['7 paraphrase modes', 'Grammar checker', 'Summarizer', 'Citation generator'], pros: ['Very popular for students', 'Good free tier', 'Accurate paraphrasing'], cons: ['Free has word limit', 'Can lose original meaning'] },
+      { id: 47, name: 'Wolfram Alpha', icon: '🔬', color: '#dd1100', category: 'Student AI', desc: 'Computational intelligence engine. Solve math, science, and data problems with step-by-step answers.', rating: 4.6, free: true, url: 'https://wolframalpha.com', features: ['Math solver', 'Science engine', 'Data analysis', 'Step-by-step'], pros: ['Unmatched for math/science', 'Detailed explanations', 'Free tier solid'], cons: ['Limited to quantitative', 'UI feels dated'] },
+      { id: 48, name: 'Consensus', icon: '📚', color: '#3b82f6', category: 'Student AI', desc: 'AI-powered academic search engine. Find scientific papers and get evidence-based answers.', rating: 4.5, free: true, url: 'https://consensus.app', features: ['200M+ papers', 'Consensus meter', 'Citation export', 'GPT-4 synthesis'], pros: ['Peer-reviewed sources', 'Great for research', 'Free tier good'], cons: ['Academic only', 'UI needs work'] },
+      { id: 49, name: 'Socratic', icon: '🎓', color: '#4285f4', category: 'Student AI', desc: 'Google\'s AI homework helper. Scan a question with your camera and get step-by-step explanations.', rating: 4.4, free: true, url: 'https://socratic.org', features: ['Photo scan questions', 'Step-by-step', 'Multiple subjects', 'Mobile app'], pros: ['Completely free', 'Great for students', 'Easy mobile UX'], cons: ['Mobile only', 'Basic AI compared to ChatGPT'] },
+      { id: 50, name: 'Elicit', icon: '🧪', color: '#6366f1', category: 'Student AI', desc: 'AI research assistant that finds, summarizes, and organizes academic research automatically.', rating: 4.5, free: true, url: 'https://elicit.com', features: ['Literature review', 'Paper summaries', 'Data extraction', 'Column customization'], pros: ['Saves research time', 'Accurate summaries', 'Good free tier'], cons: ['Academic focus only', 'Sometimes misses papers'] },
+      // More tools...
+      { id: 51, name: 'Bolt.new', icon: '⚡', color: '#fbbf24', category: 'Coding AI', desc: 'Build full-stack web apps with AI in your browser. Deploy instantly to the web.', rating: 4.7, trending: true, free: true, url: 'https://bolt.new', features: ['Full-stack generation', 'In-browser IDE', 'One-click deploy', 'Multiple frameworks'], pros: ['Incredible speed', 'Full-stack capable', 'Free tier generous'], cons: ['Complex apps break', 'New tool'] },
+      { id: 52, name: 'Lovable', icon: '💕', color: '#ec4899', category: 'Coding AI', desc: 'AI full-stack engineer. Build web apps by chatting. From idea to deployed app in minutes.', rating: 4.6, trending: true, free: true, url: 'https://lovable.dev', features: ['React apps', 'Supabase integration', 'GitHub sync', 'Instant deploy'], pros: ['Full-stack AI', 'Easy to iterate', 'Live preview'], cons: ['Credits limited', 'Complex backends tricky'] },
+      { id: 53, name: 'Flux AI', icon: '🌊', color: '#6366f1', category: 'Image AI', desc: 'Black Forest Labs\' state-of-the-art image generation model. Exceptional realism and detail.', rating: 4.8, trending: true, free: true, url: 'https://blackforestlabs.ai', features: ['FLUX.1 Pro/Dev/Schnell', 'Ultra-realistic', 'Fast generation', 'Open source'], pros: ['Best image quality 2025', 'Multiple model sizes', 'Open source'], cons: ['No official app', 'Needs API knowledge'] },
+      { id: 54, name: 'Hailuo AI', icon: '🎥', color: '#0ea5e9', category: 'Video AI', desc: 'MiniMax\'s AI video generator. Create cinematic quality videos from text and images.', rating: 4.5, trending: true, free: true, url: 'https://hailuoai.video', features: ['I2V model', 'Cinematic style', 'HD output', 'Free credits'], pros: ['Very cinematic quality', 'Good free credits', 'Fast'], cons: ['Newer platform', 'Limited duration'] },
+      { id: 55, name: 'Napkin AI', icon: '✏️', color: '#f59e0b', category: 'Design AI', desc: 'Turn your text into beautiful visual diagrams, infographics, and flowcharts automatically.', rating: 4.5, trending: true, free: true, url: 'https://napkin.ai', features: ['Text to diagram', 'Infographics', 'Export SVG/PNG', 'Multiple styles'], pros: ['Incredibly fast', 'Beautiful output', 'Free tier great'], cons: ['Design limited', 'No custom branding on free'] },
+      { id: 56, name: 'Perplexity Pages', icon: '📄', color: '#22d3ee', category: 'Writing AI', desc: 'Create beautiful, well-researched articles and reports with AI-powered research and writing.', rating: 4.5, free: true, url: 'https://perplexity.ai/pages', features: ['Research-backed', 'Auto citations', 'Beautiful layout', 'Share easily'], pros: ['Well-researched output', 'Clean design', 'Fast'], cons: ['Limited customization', 'Perplexity account needed'] },
+      { id: 57, name: 'Replit AI', icon: '🔷', color: '#3b82f6', category: 'Coding AI', desc: 'AI-powered cloud IDE. Build, run, and deploy code in 50+ languages with AI assistance.', rating: 4.5, free: true, url: 'https://replit.com', features: ['50+ languages', 'AI code chat', 'Instant deploy', 'Collaboration'], pros: ['No setup needed', 'AI + IDE combined', 'Good for beginners'], cons: ['Free tier limited', 'Performance varies'] },
+      { id: 58, name: 'Whisk', icon: '🎭', color: '#f97316', category: 'Image AI', desc: 'Google\'s Whisk lets you create AI images by combining existing images as prompts.', rating: 4.4, trending: true, free: true, url: 'https://labs.google/fx/tools/whisk', features: ['Image remix', 'Imagen 3 powered', 'Style transfer', 'Easy interface'], pros: ['Completely free', 'Very intuitive', 'Google quality'], cons: ['US only initially', 'Limited controls'] },
+      { id: 59, name: 'Notebook LM', icon: '📓', color: '#4285f4', category: 'Student AI', desc: 'Google\'s AI research assistant. Upload documents and have a conversation with your sources.', rating: 4.7, trending: true, free: true, url: 'https://notebooklm.google.com', features: ['Document Q&A', 'Audio overviews', 'Mindmaps', 'Source grounding'], pros: ['Completely free', 'Audio podcast feature', 'Accurate to sources'], cons: ['Google account required', 'Limited to uploaded docs'] },
+      { id: 60, name: 'Character.ai', icon: '🎪', color: '#8b5cf6', category: 'AI Chatbots', desc: 'Chat with AI characters based on fictional or real people. Create your own AI persona.', rating: 4.4, free: true, url: 'https://character.ai', features: ['1000s of characters', 'Create your own', 'Voice chat', 'Group chat'], pros: ['Very engaging', 'Great for entertainment', 'Free tier good'], cons: ['Not for work tasks', 'Safety filters break immersion'] },
+      // Continue with more tools to fill 100+
+      { id: 61, name: 'Framer AI', icon: '🖼️', color: '#6366f1', category: 'Design AI', desc: 'AI website builder. Describe your website and Framer designs and builds it automatically.', rating: 4.6, free: true, url: 'https://framer.com', features: ['AI website generation', 'No-code editor', 'Animations', 'CMS'], pros: ['Beautiful output', 'No-code friendly', 'Good free tier'], cons: ['Paid for custom domain', 'Less flexible than code'] },
+      { id: 62, name: 'Wix AI', icon: '🌐', color: '#0080f4', category: 'Design AI', desc: 'AI website creator by Wix. Build a complete website from a brief description in minutes.', rating: 4.3, free: true, url: 'https://wix.com', features: ['AI site builder', 'E-commerce', 'SEO tools', 'App market'], pros: ['Very easy', 'E-commerce ready', 'Many features'], cons: ['Wix ads on free', 'Less design freedom'] },
+      { id: 63, name: 'Lovart', icon: '🖌️', color: '#ec4899', category: 'Image AI', desc: 'AI creative studio for brands. Create logos, brand assets, marketing visuals with AI.', rating: 4.4, trending: true, free: true, url: 'https://lovart.ai', features: ['Brand asset gen', 'Logo creation', 'Style consistency', 'Batch generation'], pros: ['Brand focused', 'Consistent style', 'Good free tier'], cons: ['Newer platform', 'Limited styles'] },
+      { id: 64, name: 'Magnific AI', icon: '🔍', color: '#f59e0b', category: 'Image AI', desc: 'AI image upscaler and enhancer. Turn low-res images into stunning ultra-high resolution artwork.', rating: 4.7, free: false, url: 'https://magnific.ai', features: ['AI upscaling', 'Detail enhancement', 'Style preservation', '4x-16x upscale'], pros: ['Best upscaler available', 'Incredible detail', 'Multiple styles'], cons: ['Expensive', 'Credits limited'] },
+      { id: 65, name: 'Wordtune', icon: '🔤', color: '#3b82f6', category: 'Writing AI', desc: 'AI writing companion that rewrites sentences to be clearer, more engaging, and effective.', rating: 4.4, free: true, url: 'https://wordtune.com', features: ['Rewrite suggestions', 'Shorten/expand', 'AI summarizer', 'Spices (examples/facts)'], pros: ['Intuitive interface', 'Multiple rewrite options', 'Good free tier'], cons: ['Limited free usage', 'Can change meaning'] },
+      { id: 66, name: 'Mem AI', icon: '🧠', color: '#7c5cfc', category: 'Productivity AI', desc: 'AI-first note-taking app that automatically organizes your notes and surfaces relevant information.', rating: 4.4, free: true, url: 'https://mem.ai', features: ['Auto-organization', 'Smart search', 'AI writing', 'Bidirectional links'], pros: ['No manual tagging', 'Smart connections', 'Mobile app'], cons: ['Learning curve', 'Expensive pro'], },
+      { id: 67, name: 'Durable', icon: '🏗️', color: '#10b981', category: 'Design AI', desc: 'Build a professional business website with AI in 30 seconds. Includes AI-written copy.', rating: 4.3, free: true, url: 'https://durable.co', features: ['30-second websites', 'AI copy', 'CRM built-in', 'Invoicing'], pros: ['Incredibly fast', 'Business ready', 'Good value'], cons: ['Templates look similar', 'Limited customization'] },
+      { id: 68, name: 'Lottiefiles AI', icon: '🎭', color: '#8b5cf6', category: 'Design AI', desc: 'Create beautiful Lottie animations with AI. Transform static designs into animations instantly.', rating: 4.3, free: true, url: 'https://lottiefiles.com', features: ['AI animation gen', 'Lottie format', 'After Effects', 'Free library'], pros: ['Unique AI animation', 'Free library huge', 'Easy integration'], cons: ['Learning curve', 'Complex animations tricky'] },
+      { id: 69, name: 'Eleven Labs Dubbing', icon: '🌍', color: '#f97316', category: 'Voice AI', desc: 'AI dubbing studio that translates and dubs videos into 29 languages preserving original voices.', rating: 4.6, free: true, url: 'https://elevenlabs.io/dubbing', features: ['Voice preservation', '29 languages', 'Lip sync', 'Studio quality'], pros: ['Preserves original voice', 'Many languages', 'Good quality'], cons: ['Expensive at scale', 'Lip sync imperfect'] },
+      { id: 70, name: 'Hume AI', icon: '😊', color: '#ec4899', category: 'Voice AI', desc: 'Empathic AI voice with emotional intelligence. EVI responds to your emotional tone in real-time.', rating: 4.5, trending: true, free: true, url: 'https://hume.ai', features: ['Emotion detection', 'EVI voice AI', 'Real-time response', 'API access'], pros: ['Unique emotional AI', 'Free API tier', 'Research-grade'], cons: ['Newer product', 'Commercial use costs'] },
+      { id: 71, name: 'Ideogram 2.0', icon: '🆎', color: '#7c3aed', category: 'Image AI', desc: 'Next-gen AI image generation with perfect text rendering, photorealistic quality, and unlimited free usage.', rating: 4.7, trending: true, free: true, url: 'https://ideogram.ai', features: ['Perfect text in images', 'Photorealistic', 'Design mode', 'Unlimited free'], pros: ['Best for design', 'Free unlimited', 'Typography perfect'], cons: ['Newer than Midjourney', 'Less artistic range'] },
+      { id: 72, name: 'Claude Projects', icon: '📁', color: '#a855f7', category: 'Productivity AI', desc: 'Create persistent AI project workspaces in Claude. Upload docs, set instructions, collaborate on tasks.', rating: 4.7, free: true, url: 'https://claude.ai', features: ['200K context', 'Document upload', 'Custom instructions', 'Persistent memory'], pros: ['Huge context', 'Very accurate', 'Free tier available'], cons: ['Pro for full features', 'No internet access'] },
+      { id: 73, name: 'Sora', icon: '🎬', color: '#10a37f', category: 'Video AI', desc: 'OpenAI\'s video generation model. Create cinematic, photorealistic videos from text prompts.', rating: 4.6, trending: true, free: false, url: 'https://sora.com', features: ['Up to 20s videos', 'Storyboard editor', 'Remix videos', 'ChatGPT Plus included'], pros: ['Incredible quality', 'Long duration', 'Creative freedom'], cons: ['Expensive', 'Waitlist initially'] },
+      { id: 74, name: 'Tabnine', icon: '⌨️', color: '#6366f1', category: 'Coding AI', desc: 'AI code completion with privacy-first approach. Runs locally, never sends code to external servers.', rating: 4.4, free: true, url: 'https://tabnine.com', features: ['Privacy-first', '70+ languages', 'Local AI option', 'Team AI'], pros: ['Privacy focused', 'Works offline', 'Good accuracy'], cons: ['Less powerful than Copilot', 'Team features expensive'] },
+      { id: 75, name: 'Taskade AI', icon: '✅', color: '#10b981', category: 'Productivity AI', desc: 'AI-powered project management and team collaboration. Create tasks, notes, and workflows with AI.', rating: 4.5, free: true, url: 'https://taskade.com', features: ['AI task generation', 'Project templates', 'Video calls', 'Mind maps'], pros: ['All-in-one workspace', 'Good free tier', 'AI-native'], cons: ['Can be overwhelming', 'Mobile app basic'] },
+      { id: 76, name: 'Playground AI', icon: '🎪', color: '#ec4899', category: 'Image AI', desc: 'Free AI image generation with access to multiple models including SDXL, DALL·E, and Playground v3.', rating: 4.5, free: true, url: 'https://playground.com', features: ['Multiple models', '2500 free imgs/day', 'Canvas editor', 'Community'], pros: ['Very generous free tier', 'Multiple models', 'Canvas tools'], cons: ['Quality inconsistent', 'UI complex'] },
+      { id: 77, name: 'Synthesia Studio', icon: '🎭', color: '#3b82f6', category: 'Video AI', desc: 'Enterprise AI video platform for training, marketing, and internal communications at scale.', rating: 4.5, free: false, url: 'https://synthesia.io', features: ['Custom AI avatar', 'SCORM export', 'Brand kit', 'Analytics'], pros: ['Enterprise ready', 'Custom avatars', '100+ languages'], cons: ['Expensive enterprise pricing', 'Setup takes time'] },
+      { id: 78, name: 'Perplexity Pro', icon: '🔎', color: '#0ea5e9', category: 'AI Chatbots', desc: 'Perplexity Pro unlocks unlimited searches, Claude, GPT-4o, and advanced image generation.', rating: 4.7, free: false, url: 'https://perplexity.ai/pro', features: ['Unlimited searches', 'Multiple AI models', 'Image generation', 'Files & documents'], pros: ['Best AI search overall', 'Current information', 'Value for money'], cons: ['Subscription required', 'UI can be busy'] },
+      { id: 79, name: 'Anthropic Claude API', icon: '🔌', color: '#a855f7', category: 'Coding AI', desc: 'Access Claude\'s capabilities via API for developers. Build AI-powered apps and workflows.', rating: 4.8, free: false, url: 'https://anthropic.com/api', features: ['Claude 3.5 Sonnet', '200K context', 'Vision', 'Tool use'], pros: ['Best reasoning model', 'Long context', 'Excellent documentation'], cons: ['Pay per token', 'No free tier'] },
+      { id: 80, name: 'Canva Magic Studio', icon: '✨', color: '#00c4cc', category: 'Design AI', desc: 'Canva\'s complete AI suite: Magic Write, Magic Design, Magic Edit, and Dream Lab image generation.', rating: 4.7, free: true, url: 'https://canva.com/magic', features: ['Dream Lab', 'Magic Write', 'Text to video', 'Background remover'], pros: ['All in one design suite', 'Easy to use', 'Free tier generous'], cons: ['Full suite needs Canva Pro', 'Less powerful than dedicated AI'] },
+      // More tools to reach 100+
+      { id: 81, name: 'Forefront AI', icon: '🚀', color: '#7c5cfc', category: 'AI Chatbots', desc: 'Access multiple frontier AI models in one chat interface with web browsing and document analysis.', rating: 4.3, free: true, url: 'https://forefront.ai', features: ['Multiple models', 'Web browsing', 'File analysis', 'Image gen'], pros: ['Multiple models free', 'Clean interface', 'Web browsing'], cons: ['Less polished', 'Smaller community'] },
+      { id: 82, name: 'Pictory AI', icon: '📸', color: '#f97316', category: 'Video AI', desc: 'Turn blog posts, scripts, and articles into engaging videos automatically with AI.', rating: 4.4, free: false, url: 'https://pictory.ai', features: ['Blog to video', 'Script to video', 'Auto captions', 'Stock footage'], pros: ['Content repurposing', 'Fast creation', 'Good captions'], cons: ['Paid only', 'Stock footage limited'] },
+      { id: 83, name: 'InVideo AI', icon: '🎞️', color: '#ec4899', category: 'Video AI', desc: 'AI video creator for social media, YouTube, and marketing. Generate videos from scripts in minutes.', rating: 4.4, free: true, url: 'https://invideo.io', features: ['AI video gen', '5000+ templates', 'Voiceover AI', 'Media library'], pros: ['Easy to use', 'Many templates', 'Good free tier'], cons: ['Watermark on free', 'Limited AI customization'] },
+      { id: 84, name: 'Mixo', icon: '🌿', color: '#10b981', category: 'Design AI', desc: 'Launch a startup landing page from an idea in seconds. AI builds the whole page with content.', rating: 4.3, free: true, url: 'https://mixo.io', features: ['Instant landing page', 'Email collection', 'A/B testing', 'Custom domain'], pros: ['Extremely fast', 'Good for MVPs', 'Clean design'], cons: ['Very template-y', 'Limited pages on free'] },
+      { id: 85, name: 'Unscreen', icon: '🎭', color: '#8b5cf6', category: 'Video AI', desc: 'Remove video backgrounds automatically without green screen. 100% automated AI background removal.', rating: 4.5, free: true, url: 'https://unscreen.com', features: ['Auto background removal', 'GIF support', 'HD video', 'Batch processing'], pros: ['Very accurate', 'Easy to use', 'Free for short clips'], cons: ['Paid for long videos', 'Sometimes edges rough'] },
+      { id: 86, name: 'Remove.bg', icon: '✂️', color: '#10b981', category: 'Design AI', desc: 'Remove image backgrounds instantly with AI. One-click background removal for photos.', rating: 4.6, free: true, url: 'https://remove.bg', features: ['One-click removal', 'HD download', 'API access', 'Batch processing'], pros: ['Best background removal', 'Very accurate', 'Fast API'], cons: ['Credits for HD download', 'Paid for bulk'] },
+      { id: 87, name: 'Podcastle', icon: '🎙️', color: '#f59e0b', category: 'Voice AI', desc: 'AI podcast creation studio. Record, edit, transcribe, and enhance podcasts with AI tools.', rating: 4.4, free: true, url: 'https://podcastle.ai', features: ['AI recording', 'Noise removal', 'Transcription', 'Magic Dust (audio enhance)'], pros: ['All-in-one podcast tool', 'Good free tier', 'Magic Dust amazing'], cons: ['Export limited on free', 'Mobile app basic'] },
+      { id: 88, name: 'VEED.IO', icon: '🎬', color: '#3b82f6', category: 'Video AI', desc: 'Online video editor with AI features: auto subtitles, eye contact, background removal, and more.', rating: 4.5, free: true, url: 'https://veed.io', features: ['Auto subtitles', 'Eye contact fix', 'AI avatars', 'Teleprompter'], pros: ['Browser-based', 'Auto captions fast', 'Good free tier'], cons: ['Watermark on free', 'Processing can be slow'] },
+      { id: 89, name: 'Topaz Photo AI', icon: '📷', color: '#6366f1', category: 'Image AI', desc: 'Professional AI photo enhancement suite: upscale, denoise, sharpen, and restore old photos.', rating: 4.7, free: false, url: 'https://topazlabs.com/topaz-photo-ai', features: ['AI upscaling', 'Noise reduction', 'Face recovery', 'Sharpening'], pros: ['Professional quality', 'Batch processing', 'Works offline'], cons: ['Expensive', 'Desktop only'] },
+      { id: 90, name: 'Motion AI', icon: '🎬', color: '#f59e0b', category: 'Video AI', desc: 'AI-powered video motion tracking and compositing for professional video production.', rating: 4.3, free: false, url: 'https://motion.ai', features: ['Motion tracking', 'Compositing AI', 'VFX tools', 'Batch render'], pros: ['Professional features', 'Accurate tracking', 'Saves time'], cons: ['Steep learning curve', 'Expensive'] },
+      { id: 91, name: 'Looka', icon: '🏷️', color: '#ec4899', category: 'Design AI', desc: 'AI logo maker and brand identity generator. Create professional logos in minutes from your company name.', rating: 4.3, free: false, url: 'https://looka.com', features: ['AI logo generation', 'Brand kit', 'Business card', 'Social media kit'], pros: ['Fast logo creation', 'Comprehensive brand kit', 'Many styles'], cons: ['Paid to download', 'Less unique than human designer'] },
+      { id: 92, name: 'Namelix', icon: '💡', color: '#fbbf24', category: 'Marketing AI', desc: 'AI business name generator. Generate catchy, brandable business names for your startup.', rating: 4.4, free: true, url: 'https://namelix.com', features: ['Business name gen', 'Domain check', 'Logo generation', 'Keyword filtering'], pros: ['100% free', 'Domain integration', 'Fast and easy'], cons: ['Names sometimes generic', 'No trademark check'] },
+      { id: 93, name: 'Predis AI', icon: '📱', color: '#8b5cf6', category: 'Marketing AI', desc: 'AI social media content generator. Create posts, captions, reels scripts, and ad copies at scale.', rating: 4.4, free: true, url: 'https://predis.ai', features: ['Social media posts', 'Competitor analysis', 'Content calendar', 'Multi-platform'], pros: ['Saves tons of time', 'Analytics included', 'Free tier decent'], cons: ['Quality varies', 'Expensive for teams'] },
+      { id: 94, name: 'Taplio', icon: '📊', color: '#3b82f6', category: 'Marketing AI', desc: 'AI LinkedIn content creator and growth tool. Generate posts, schedule, and grow your LinkedIn audience.', rating: 4.4, free: false, url: 'https://taplio.com', features: ['LinkedIn post gen', 'AI inspiration', 'CRM', 'Analytics'], pros: ['LinkedIn specialist', 'Great post quality', 'Inspiration feature'], cons: ['Only LinkedIn', 'Expensive'] },
+      { id: 95, name: 'AdCreative.ai', icon: '📢', color: '#f97316', category: 'Marketing AI', desc: 'AI advertising creative generator. Create high-converting ad banners and social ads in seconds.', rating: 4.5, free: false, url: 'https://adcreative.ai', features: ['Ad banner generation', 'A/B testing', 'Score prediction', 'Brand kit'], pros: ['High converting output', 'Data-driven', 'Easy brand setup'], cons: ['Expensive', 'Needs good brand assets'] },
+      { id: 96, name: 'Surfer SEO', icon: '🏄', color: '#10b981', category: 'Marketing AI', desc: 'AI SEO optimization tool. Write and optimize articles that rank on Google with data-driven insights.', rating: 4.6, free: false, url: 'https://surferseo.com', features: ['Content editor', 'SERP analysis', 'AI writer', 'Topical map'], pros: ['Best SEO AI tool', 'Data-driven', 'Proven results'], cons: ['Expensive', 'Steep learning curve'] },
+      { id: 97, name: 'Semrush AI', icon: '📈', color: '#ff642d', category: 'Marketing AI', desc: 'SEO and digital marketing platform with AI writing assistant for content that ranks.', rating: 4.6, free: false, url: 'https://semrush.com', features: ['AI content tool', 'Keyword research', 'Competitive analysis', 'Site audit'], pros: ['Industry standard', 'Comprehensive data', 'AI integrated'], cons: ['Very expensive', 'Complex for beginners'] },
+      { id: 98, name: 'Lovo AI', icon: '🗣️', color: '#7c5cfc', category: 'Voice AI', desc: 'AI voice generator with 500+ voices and 100+ languages. Generate ultra-realistic voiceovers.', rating: 4.4, free: true, url: 'https://lovo.ai', features: ['500+ voices', '100+ languages', 'Video editor', 'Voice cloning'], pros: ['Huge voice library', 'Many languages', 'Good free tier'], cons: ['Quality varies by voice', 'Paid for cloning'] },
+      { id: 99, name: 'Rytr', icon: '✏️', color: '#10b981', category: 'Writing AI', desc: 'Affordable AI writing assistant for blogs, emails, social posts, and SEO content.', rating: 4.3, free: true, url: 'https://rytr.me', features: ['40+ use cases', 'SEO analyzer', 'Chrome extension', 'Tone changer'], pros: ['Very affordable', 'Easy to use', 'Good free tier'], cons: ['Quality below Jasper', 'No chat interface'] },
+      { id: 100, name: 'Simplified', icon: '🎯', color: '#f59e0b', category: 'Marketing AI', desc: 'All-in-one AI marketing platform: AI writer, designer, video maker, and social media scheduler.', rating: 4.4, free: true, url: 'https://simplified.com', features: ['AI writer', 'Design suite', 'Video maker', 'Social scheduler'], pros: ['True all-in-one', 'Generous free tier', 'Good for teams'], cons: ['Master of none', 'Performance can lag'] },
+      { id: 101, name: 'Midjourney Niji', icon: '🌸', color: '#ec4899', category: 'Image AI', desc: 'Midjourney\'s anime and illustration focused model. Create stunning anime artwork from text prompts.', rating: 4.7, trending: true, free: false, url: 'https://midjourney.com', features: ['Anime style', 'Niji V6', 'Illustration mode', 'Character focus'], pros: ['Best anime AI art', 'Incredible quality', 'Active community'], cons: ['Discord required', 'Paid subscription'] },
+      { id: 102, name: 'Vocaloid', icon: '🎤', color: '#3b82f6', category: 'Music AI', desc: 'Legendary AI singing voice synthesizer. Create virtual vocals for songs in multiple languages.', rating: 4.3, free: false, url: 'https://vocaloid.com', features: ['Singing synthesis', 'Multiple voice banks', 'DAW integration', 'Japanese/English'], pros: ['Industry standard', 'Unique sound', 'Great for music production'], cons: ['Steep learning curve', 'Expensive software'] },
+      { id: 103, name: 'Hyperwrite', icon: '📖', color: '#8b5cf6', category: 'Writing AI', desc: 'Personal AI writing assistant that learns your style. Autocomplete, rewrite, and research while you write.', rating: 4.4, free: true, url: 'https://hyperwriteai.com', features: ['Chrome extension', 'TypeAhead', 'AI agents', 'Style learning'], pros: ['Works everywhere', 'Learns your style', 'Agents feature cool'], cons: ['Best features paid', 'Extension dependent'] },
+      { id: 104, name: 'Kaiber AI', icon: '🎨', color: '#f97316', category: 'Video AI', desc: 'AI video generation from images and music. Create music video-style animations from any song.', rating: 4.3, free: true, url: 'https://kaiber.ai', features: ['Music video gen', 'Style transfer', 'Transform video', 'Flip Book style'], pros: ['Music video focus', 'Creative results', 'Good community'], cons: ['Unpredictable output', 'Credits limited'] },
+      { id: 105, name: 'Stable Video', icon: '🎞️', color: '#3b82f6', category: 'Video AI', desc: 'Stability AI\'s video generation model. Animate images into smooth video clips.', rating: 4.4, free: true, url: 'https://stability.ai', features: ['Image to video', 'Smooth motion', 'HD output', 'Open source'], pros: ['Open source', 'Free to run locally', 'Good quality'], cons: ['Technical setup', 'Local GPU needed'] },
+    ];
+
+    const CATEGORIES = [
+      { name: 'AI Chatbots', icon: '🤖', count: 12, color: 'rgba(16,163,127,0.15)', desc: 'Conversational AI assistants' },
+      { name: 'Image AI', icon: '🎨', count: 22, color: 'rgba(124,92,252,0.15)', desc: 'Generate stunning AI artwork' },
+      { name: 'Video AI', icon: '🎬', count: 18, color: 'rgba(239,68,68,0.15)', desc: 'Create and edit AI videos' },
+      { name: 'Writing AI', icon: '✍️', count: 14, color: 'rgba(59,130,246,0.15)', desc: 'AI writing and copywriting' },
+      { name: 'Voice AI', icon: '🎙️', count: 10, color: 'rgba(249,115,22,0.15)', desc: 'Text-to-speech and voice cloning' },
+      { name: 'Coding AI', icon: '💻', count: 12, color: 'rgba(99,102,241,0.15)', desc: 'AI coding assistants' },
+      { name: 'Design AI', icon: '🖌️', count: 10, color: 'rgba(236,72,153,0.15)', desc: 'AI design and graphics tools' },
+      { name: 'Music AI', icon: '🎵', count: 8, color: 'rgba(168,85,247,0.15)', desc: 'Generate music and audio' },
+      { name: 'Student AI', icon: '📚', count: 8, color: 'rgba(16,185,129,0.15)', desc: 'AI tools for learning' },
+      { name: 'Marketing AI', icon: '📣', count: 10, color: 'rgba(245,158,11,0.15)', desc: 'Marketing and growth tools' },
+      { name: 'Productivity AI', icon: '⚡', count: 8, color: 'rgba(34,211,238,0.15)', desc: 'Boost your workflow with AI' },
+      { name: 'Trending', icon: '🔥', count: 25, color: 'rgba(251,191,36,0.15)', desc: 'Most popular right now' },
+    ];
+
+    const PROMPTS = {
+      'ChatGPT': [
+        { title: 'Master Business Plan', text: 'You are a senior business strategist. Create a comprehensive 12-month business plan for [BUSINESS TYPE] targeting [TARGET MARKET]. Include executive summary, market analysis, competitive landscape, revenue model, marketing strategy, operational plan, financial projections, and key milestones. Make it investor-ready.' },
+        { title: 'Expert Content Outline', text: 'Act as a world-class content strategist. Create a detailed, SEO-optimized outline for a 3000-word blog post about [TOPIC]. Include H2/H3 headers, key points for each section, statistics to include, internal linking suggestions, and a compelling meta description. Target keyword: [KEYWORD].' },
+        { title: 'Email Marketing Sequence', text: 'You are a direct response copywriter. Write a 5-email nurture sequence for [PRODUCT/SERVICE] targeting [AUDIENCE]. Email 1: Welcome + value, Email 2: Pain point, Email 3: Social proof, Email 4: Overcome objections, Email 5: CTA. Include subject lines with 40%+ open rate potential.' },
+        { title: 'Code Review Expert', text: 'You are a senior software engineer. Review the following code and provide: 1) Critical bugs and security issues 2) Performance optimizations 3) Code quality improvements 4) Best practices violations 5) Refactored version with explanations. Code: [PASTE CODE]' },
+        { title: 'Research Summarizer', text: 'Analyze and summarize the following research/article as if you are a PhD researcher. Extract: key findings, methodology, implications, limitations, and practical applications. Identify any biases or gaps. Rate the quality of evidence 1-10 with justification. Text: [PASTE ARTICLE]' },
+        { title: 'Social Media Strategy', text: 'Create a 30-day social media strategy for [BRAND] on [PLATFORM]. Include: daily posting schedule, content pillars, 10 ready-to-post captions with hashtags, engagement tactics, growth strategies, and KPIs to track. Tone: [TONE]. Target audience: [AUDIENCE].' },
+        { title: 'Sales Script Creator', text: 'You are a top sales trainer. Write a complete sales call script for [PRODUCT] targeting [CUSTOMER TYPE]. Include: cold opening, qualifying questions, pain discovery, value proposition, objection handling for top 5 objections, and multiple closing techniques. Make it conversational and human.' },
+        { title: 'Learning Path Designer', text: 'Create a complete 90-day learning roadmap for mastering [SKILL]. Include: Week-by-week curriculum, resources (free + paid), practical projects, milestone checkpoints, common mistakes to avoid, and how to measure progress. Beginner to job-ready level.' },
+      ],
+      'Image Gen': [
+        { title: 'Cinematic Portrait', text: 'Cinematic portrait of [SUBJECT], golden hour lighting, shallow depth of field, 85mm lens, Kodak Portra 400 film grain, rich colors, professional photography, award-winning, National Geographic style, ultra detailed, 8K resolution' },
+        { title: 'Cyberpunk Cityscape', text: 'Futuristic cyberpunk megacity at night, neon signs in Japanese and English, flying cars, rain-slicked streets reflecting neon lights, ultra realistic, cinematic, blade runner aesthetic, volumetric fog, 8K, hyperdetailed, wide angle shot' },
+        { title: 'Fantasy Landscape', text: 'Epic fantasy landscape, floating islands with waterfalls cascading into clouds below, ancient ruins covered in glowing runes, dragon silhouette against massive twin moons, concept art, digital painting, greg rutkowski style, dramatic lighting, 4K' },
+        { title: 'Product Photography', text: '[PRODUCT] product photography, clean white marble background, dramatic side lighting, perfect shadows, hyperrealistic, commercial photography, advertising quality, studio setup, reflections, ultra detailed, professional product shot' },
+        { title: 'Anime Warrior', text: 'Anime warrior girl with silver armor and glowing blue sword, cherry blossom petals falling, moonlit battlefield, dramatic pose, studio ghibli meets makoto shinkai art style, vibrant colors, detailed illustration, 4K quality' },
+        { title: 'Vintage Poster', text: 'Retro vintage travel poster of [LOCATION], 1950s illustration style, bold colors, flat design, art deco typography, sun rays, iconic landmarks, nostalgic summer feeling, highly detailed poster design' },
+        { title: 'Sci-fi Character', text: 'Futuristic space explorer in advanced exo-suit on alien planet with two suns, bioluminescent alien flora, dramatic sky, concept art, artstation quality, detailed, cinematic lighting, 4K UHD' },
+        { title: 'Cozy Interior', text: 'Cozy minimalist Japandi bedroom, morning light through sheer curtains, neutral tones, wooden elements, indoor plants, soft textures, architectural photography, interior design magazine quality, 4K, peaceful atmosphere' },
+        { title: 'Brand Logo Concept', text: 'Modern minimalist logo design for [COMPANY TYPE] brand, vector style, clean lines, geometric shapes, gradient from [COLOR1] to [COLOR2], professional branding, on white background, scalable design' },
+        { title: 'Food Photography', text: '[FOOD DISH] food photography, overhead shot, natural lighting from window, rustic wooden table, fresh ingredients scattered artfully, depth of field, food magazine quality, mouth-watering, detailed textures, editorial style' },
+      ],
+      'Instagram': [
+        { title: 'Lifestyle Caption', text: 'Write 5 Instagram captions for a [LIFESTYLE/AESTHETIC] photo. Include: hook in first line, storytelling, 1-2 emojis, call-to-action, and 15 relevant hashtags. Tone: [aspirational/funny/motivational/educational]. Save to use later.' },
+        { title: 'Product Launch Post', text: 'Write an Instagram post launching [PRODUCT]. Include: attention-grabbing first line, 3 key benefits, social proof element, urgency/scarcity, CTA, and 20 niche hashtags. Make it feel genuine, not salesy. 150 words max.' },
+        { title: 'Reel Script', text: 'Write a 30-second Instagram Reel script for [TOPIC]. Include: hook (0-3s), problem/intrigue (3-8s), content/value (8-25s), CTA (25-30s). Add on-screen text suggestions and trending audio recommendations. Make it scroll-stopping.' },
+        { title: 'Bio Optimizer', text: 'Rewrite my Instagram bio to maximize followers and conversions. Current bio: [BIO]. My niche: [NICHE]. Target audience: [AUDIENCE]. Include: who I help, what I offer, social proof, and a clear CTA. Keep under 150 characters.' },
+        { title: 'Viral Hook Generator', text: 'Generate 20 viral Instagram hook ideas for [NICHE] content. Each hook should stop the scroll in the first 1-2 lines. Mix formats: questions, shocking stats, controversial takes, and personal stories. All must make people want to read more.' },
+      ],
+      'Marketing': [
+        { title: 'AIDA Copywriting', text: 'Write compelling marketing copy for [PRODUCT/SERVICE] using the AIDA framework. Attention: bold opening, Interest: key benefits and features, Desire: social proof and emotional connection, Action: strong CTA. Target audience: [AUDIENCE]. Length: [SHORT/MEDIUM/LONG].' },
+        { title: 'Customer Avatar', text: 'Create a detailed ideal customer avatar for [BUSINESS]. Include: demographics, psychographics, daily routine, pain points, desires, biggest frustrations, content they consume, where they hang out online, objections to buying, and their dream outcome. Make it feel like a real person.' },
+        { title: 'Ad Copy Variants', text: 'Write 5 Facebook/Instagram ad copy variants for [PRODUCT], each targeting a different angle: 1) Pain-focused, 2) Outcome-focused, 3) Social proof, 4) Curiosity/intrigue, 5) Limited offer. Include headline, primary text, and CTA for each.' },
+        { title: 'Landing Page Copy', text: 'Write complete landing page copy for [PRODUCT/SERVICE]. Include: headline + subheadline, hero section copy, 3 key benefits, feature list, social proof section (testimonial format), FAQ section, and 3 different CTA variations. Conversion-optimized.' },
+        { title: 'SEO Meta Tags', text: 'Write SEO-optimized title tags and meta descriptions for [PAGE TOPIC]. Create 3 variations for A/B testing. Include: primary keyword [KEYWORD], be under 60 chars for title and 155 for meta, have high CTR potential, and match search intent.' },
+        { title: 'YouTube Script', text: 'Write a complete YouTube video script for [TOPIC]. Include: hook (30s), intro with value promise, main content with 5 key points, engagement prompt, mid-video CTA, outro with subscribe CTA. Target length: [MINUTES]. SEO title and description included.' },
+      ],
+      'Business': [
+        { title: 'Investor Pitch Deck', text: 'Create an investor pitch deck outline for [STARTUP]. Include 12 slides: Problem, Solution, Market Size ($TAM/SAM/SOM), Product demo description, Business model, Traction/metrics, Go-to-market strategy, Competition, Team, Financials (3-year projections), Funding ask, Vision. Add key talking points for each.' },
+        { title: 'Job Description Writer', text: 'Write a compelling job description for a [JOB TITLE] at [COMPANY TYPE]. Make candidates excited to apply. Include: role summary, impact statement, key responsibilities (10 bullets), requirements (must-have vs nice-to-have), culture section, benefits, and growth opportunities. Avoid corporate jargon.' },
+        { title: 'OKR Framework', text: 'Create a quarterly OKR framework for [TEAM/COMPANY] focused on [MAIN GOAL]. Write 3 Objectives, each with 3-4 Key Results that are measurable. Include baseline metrics, targets, and how to track each KR. Add implementation timeline and review cadence.' },
+        { title: 'Competitive Analysis', text: 'Conduct a thorough competitive analysis for [COMPANY] against competitors [COMPETITOR 1, 2, 3]. Use: SWOT analysis for each, feature comparison matrix, pricing strategy comparison, market positioning map, and 5 strategic recommendations. Focus on actionable insights.' },
+      ],
+      'Coding': [
+        { title: 'Full-Stack App Plan', text: 'You are a senior software architect. Plan a complete [APP TYPE] application. Include: tech stack recommendation with justification, database schema, API endpoint design, authentication approach, folder structure, third-party integrations, security considerations, scaling strategy, and MVP vs full feature list.' },
+        { title: 'Code Debugger', text: 'You are an expert debugger. Analyze this code and find all bugs: [PASTE CODE]. For each bug provide: 1) What the bug is 2) Why it happens 3) How to fix it 4) Fixed code snippet. Also check for: security vulnerabilities, performance issues, and edge cases not handled.' },
+        { title: 'API Documentation', text: 'Generate comprehensive API documentation for the following endpoints: [PASTE API CODE OR DESCRIPTION]. Include: endpoint description, HTTP method, URL, request parameters, request body schema, response schema, error responses, authentication requirements, and 3 example requests/responses in JSON.' },
+        { title: 'Unit Test Generator', text: 'Write comprehensive unit tests for the following code using [JEST/PYTEST/OTHER]. Cover: happy path, edge cases, error handling, boundary conditions, and mock external dependencies. Code: [PASTE CODE]. Aim for 90%+ coverage and add comments explaining what each test validates.' },
+        { title: 'Database Schema', text: 'Design an optimized database schema for [APPLICATION TYPE]. Include: all tables with columns and data types, primary/foreign keys, indexes for performance, relationships (1:1, 1:many, many:many), constraints, and explain design decisions. Add SQL CREATE statements and sample queries.' },
+        { title: 'Algorithm Explainer', text: 'Explain [ALGORITHM/DATA STRUCTURE] as if teaching a senior developer. Include: how it works conceptually, time/space complexity analysis, when to use vs alternatives, implementation in [LANGUAGE], 3 real-world use cases, and common pitfalls. Make it thorough but clear.' },
+      ],
+      'Student': [
+        { title: 'Essay Outline Creator', text: 'I need to write a [WORD COUNT] word essay on [TOPIC] for [CLASS/LEVEL]. Create a detailed outline with: thesis statement, 4-5 main arguments with supporting points, counterargument and rebuttal, introduction hook ideas, and conclusion approach. Include 5 credible sources I should research.' },
+        { title: 'Study Guide Generator', text: 'Create a comprehensive study guide for [SUBJECT/TOPIC] at [LEVEL] level. Include: key concepts explained simply, important formulas/rules, memory tricks and mnemonics, common exam questions with answers, practice problems, and a 1-page summary cheat sheet.' },
+        { title: 'Research Paper Helper', text: 'Help me research [TOPIC] for an academic paper. Provide: overview of the topic, 5 main sub-topics to explore, current academic debates, key researchers/theorists, important studies to cite, gaps in current research, and potential unique angles for my paper.' },
+        { title: 'Concept Explainer', text: 'Explain [COMPLEX CONCEPT] in three ways: 1) For a 5-year-old (simple analogy), 2) For a high school student (clear explanation with examples), 3) For an expert (technical explanation). Then give 3 real-world applications and a memory trick to remember it.' },
+        { title: 'Exam Prep Quiz', text: 'Create a 20-question practice quiz for [SUBJECT] covering [TOPICS/CHAPTERS]. Include: multiple choice, short answer, and problem-solving questions. Vary difficulty (easy/medium/hard). Provide an answer key with explanations. Focus on what\'s typically on exams for [LEVEL].' },
+      ],
+      'Productivity': [
+        { title: 'Daily Planning System', text: 'Design a complete daily planning system for [PROFESSION/ROLE]. Include: morning routine template, time-blocking schedule, priority matrix framework, end-of-day review process, weekly reflection template, and how to handle interruptions. Based on productivity science and deep work principles.' },
+        { title: 'Meeting Agenda Creator', text: 'Write a tight, productive meeting agenda for a [MEETING TYPE] with [NUMBER] attendees. Goal: [MEETING GOAL]. Duration: [TIME]. Include: pre-read materials list, timed agenda items, decision points, action item format, follow-up process. Make every minute count.' },
+        { title: 'SOP Document', text: 'Write a comprehensive Standard Operating Procedure (SOP) for [PROCESS/TASK]. Include: purpose and scope, who is responsible, step-by-step instructions (numbered), decision trees for edge cases, quality checks, common errors and solutions, and review schedule. Professional format.' },
+        { title: 'Habit Stack Designer', text: 'Design a science-backed habit stacking routine for [GOAL] that fits into my [MORNING/EVENING] routine of [CURRENT TIME BUDGET]. Use BJ Fogg\'s Tiny Habits method. Include: anchor habits, habit stack sequence, tracking method, obstacle planning, and 30-day progression plan.' },
+        { title: 'Project Kickoff Template', text: 'Create a complete project kickoff document template for [PROJECT TYPE]. Include: project brief, SMART goals, stakeholder map, scope/out-of-scope, resource requirements, risk register, communication plan, timeline with milestones, success metrics, and decision-making process.' },
+      ],
+      'Video': [
+        { title: 'YouTube Shorts Script', text: 'Write 5 YouTube Shorts scripts on [TOPIC] (each under 60 seconds). Each should have: viral hook in first 3 words, fast-paced value delivery, pattern interrupt at 15 seconds, and strong end screen CTA. Format with on-screen text suggestions and visual cut points.' },
+        { title: 'TikTok Trend Script', text: 'Write a TikTok script for [TOPIC] following the current [TREND FORMAT e.g., POV, Day in my life, Hot take]. Include: trending audio suggestions, hook, 3-5 key moments for visual cuts, text overlay suggestions, and hashtag strategy. Target: [DEMOGRAPHIC]. Duration: [30/60]s.' },
+        { title: 'Explainer Video Script', text: 'Write a professional explainer video script for [PRODUCT/CONCEPT]. Duration: [90s/2min/3min]. Include: problem hook, solution reveal, 3 key benefits with visual cues, social proof moment, CTA, and voiceover direction notes. B-roll suggestions included.' },
+        { title: 'Video Description SEO', text: 'Write a YouTube video description for [VIDEO TITLE/TOPIC] that ranks in search. Include: keyword-rich first 2 lines (most important), full description 200+ words, timestamps with keyword-rich labels, links section, hashtags (3 relevant), and end screen prompt.' },
+      ],
+      'Thumbnail': [
+        { title: 'Viral Thumbnail Prompt', text: 'Shocked content creator pointing at shocking statistic "[STAT]" on screen behind them, bright red and yellow color scheme, large bold text overlay "[TITLE]", high contrast, thumbnail clickbait style, professional studio quality' },
+        { title: 'AI Tools Thumbnail', text: 'Futuristic robot AI assistant helping human with laptop, glowing neural network background, bold text "[AI TOOL NAME]", shocked/amazed facial expression, neon blue and purple color palette, ultra HD, YouTube thumbnail style' },
+        { title: 'Money/Earning Thumbnail', text: 'Money bills exploding out of laptop screen showing online dashboard, excited person in background, bright green and gold colors, bold text "[EARNING AMOUNT]", lifestyle thumbnail style, high contrast, clean background' },
+        { title: 'Tutorial Thumbnail', text: 'Before and after comparison split screen showing [BEFORE] on left (dark/sad) and [AFTER] on right (bright/happy), bold text "BEFORE / AFTER", arrow pointing right, professional tutorial thumbnail style, high saturation' },
+        { title: 'Tech Review Thumbnail', text: '[PRODUCT] floating in front of tech-inspired gradient background (dark blue to purple), product name in sleek font, star rating visible, "HONEST REVIEW" text, professional product photography lighting, 4K sharp' },
+      ],
+    };
+
+    const BLOG_POSTS = [
+      { emoji: '🤖', title: 'Best AI Tools for Students in 2026', tag: 'Students', date: 'Mar 15, 2026', desc: 'Top AI tools every student needs: from homework help to research assistance.', color: 'rgba(16,185,129,0.15)' },
+      { emoji: '🆓', title: 'Top 50 Free AI Tools in 2026 (No Credit Card)', tag: 'Free Tools', date: 'Mar 12, 2026', desc: 'The best completely free AI tools available right now — tested and ranked.', color: 'rgba(124,92,252,0.15)' },
+      { emoji: '🎨', title: 'Best AI Image Generators Compared (2026)', tag: 'Image AI', date: 'Mar 10, 2026', desc: 'Midjourney vs Flux vs DALL·E 3 vs Stable Diffusion — full comparison.', color: 'rgba(236,72,153,0.15)' },
+      { emoji: '📱', title: 'AI Tools for Instagram Growth — Complete Guide', tag: 'Marketing', date: 'Mar 8, 2026', desc: 'Use these AI tools to grow your Instagram from 0 to 10K followers.', color: 'rgba(245,158,11,0.15)' },
+      { emoji: '💰', title: 'How to Use AI for Online Earning in 2026', tag: 'Business', date: 'Mar 5, 2026', desc: 'Real ways to make money online using AI tools — from freelancing to products.', color: 'rgba(34,211,238,0.15)' },
+      { emoji: '💻', title: 'Best AI Coding Assistants for Developers 2026', tag: 'Coding', date: 'Mar 3, 2026', desc: 'Cursor vs GitHub Copilot vs Codeium — which AI coding tool wins?', color: 'rgba(99,102,241,0.15)' },
+      { emoji: '🎬', title: 'Best AI Video Generators: Full 2026 Ranking', tag: 'Video AI', date: 'Mar 1, 2026', desc: 'Sora, Runway, Kling, Luma — every major AI video tool ranked and reviewed.', color: 'rgba(239,68,68,0.15)' },
+      { emoji: '✍️', title: 'ChatGPT Prompts That Actually Work (300+ List)', tag: 'Prompts', date: 'Feb 28, 2026', desc: 'The ultimate collection of ChatGPT prompts tested for real results.', color: 'rgba(59,130,246,0.15)' },
+      { emoji: '🎙️', title: 'Best AI Voice Generators: ElevenLabs vs Alternatives', tag: 'Voice AI', date: 'Feb 25, 2026', desc: 'Complete comparison of every major AI voice tool in 2026.', color: 'rgba(249,115,22,0.15)' },
+    ];
+
+    const LEADERBOARD_DATA = [
+      { name: 'ChatGPT', icon: '🤖', cat: 'AI Chatbots', votes: '2.4M', pct: 100 },
+      { name: 'Midjourney', icon: '🎨', cat: 'Image AI', votes: '1.8M', pct: 75 },
+      { name: 'Claude', icon: '🧠', cat: 'AI Chatbots', votes: '1.5M', pct: 62 },
+      { name: 'GitHub Copilot', icon: '💻', cat: 'Coding AI', votes: '1.2M', pct: 50 },
+      { name: 'Runway ML', icon: '🎬', cat: 'Video AI', votes: '980K', pct: 41 },
+      { name: 'Perplexity AI', icon: '🔍', cat: 'Search AI', votes: '850K', pct: 35 },
+      { name: 'Leonardo AI', icon: '🦁', cat: 'Image AI', votes: '720K', pct: 30 },
+      { name: 'ElevenLabs', icon: '🎙️', cat: 'Voice AI', votes: '650K', pct: 27 },
+      { name: 'Cursor IDE', icon: '🖱️', cat: 'Coding AI', votes: '580K', pct: 24 },
+      { name: 'Canva AI', icon: '🖌️', cat: 'Design AI', votes: '520K', pct: 22 },
+    ];
+
+    // ============================================================
+    // INIT
+    // ============================================================
+    let bookmarks = JSON.parse(localStorage.getItem('ai_hub_bookmarks') || '[]');
+
+    function init() {
+      renderHomeTrending();
+      renderHomeCats();
+      renderToolOfDay();
+      renderPromptOfDay();
+      renderHomePrompts();
+      renderLeaderboard('leaderboard');
+      renderFeatured();
+      renderHomeBlog();
+      renderAllTools();
+      renderAllCats();
+      renderAllBlog();
+      renderTrending();
+      renderLeaderboard('trendingLeaderboard');
+      renderPrompts();
+      setupReveal();
+    }
+
+    // ============================================================
+    // RENDER FUNCTIONS
+    // ============================================================
+    function renderToolCard(tool, container) {
+      const saved = bookmarks.includes(tool.id);
+      const div = document.createElement('div');
+      div.className = 'tool-card';
+      div.innerHTML = `
+    <div class="tool-card-top">
+      <div class="tool-icon" style="background:${tool.color}22;color:${tool.color};">${tool.icon}</div>
+      <div>
+        <div class="tool-name">${tool.name}</div>
+        <div class="tool-stars">${'★'.repeat(Math.floor(tool.rating))}${'☆'.repeat(5 - Math.floor(tool.rating))} ${tool.rating}</div>
+      </div>
+    </div>
+    <div class="tool-desc">${tool.desc}</div>
+    <div class="tool-footer">
+      <span class="tool-tag">${tool.category}</span>
+      <div style="display:flex;gap:0.4rem;">
+        <button class="btn-bookmark ${saved ? 'saved' : ''}" onclick="toggleBookmark(${tool.id},this)" title="${saved ? 'Saved' : 'Save'}">
+          ${saved ? '🔖' : '🔖'}
+        </button>
+        <button class="btn-view" onclick="openToolModal(${tool.id})">View →</button>
+      </div>
+    </div>
+    ${tool.trending ? '<div style="position:absolute;top:12px;right:12px;font-size:0.65rem;background:rgba(251,191,36,0.15);border:1px solid rgba(251,191,36,0.3);border-radius:100px;padding:0.15rem 0.5rem;color:#fbbf24;font-weight:700;">🔥 TRENDING</div>' : ''}
+    ${tool.free ? '<div style="position:absolute;top:' + (tool.trending ? '36px' : '12px') + ';right:12px;font-size:0.65rem;background:rgba(34,197,94,0.12);border:1px solid rgba(34,197,94,0.25);border-radius:100px;padding:0.15rem 0.5rem;color:#4ade80;font-weight:700;">FREE</div>' : ''}
+  `;
+      document.getElementById(container).appendChild(div);
+    }
+
+    function renderHomeTrending() {
+      const trending = TOOLS.filter(t => t.trending).slice(0, 6);
+      trending.forEach(t => renderToolCard(t, 'homeTrendingGrid'));
+    }
+
+    function renderHomeCats() {
+      const el = document.getElementById('homeCatsGrid');
+      CATEGORIES.forEach(cat => {
+        const div = document.createElement('div');
+        div.className = 'cat-card';
+        div.style.background = cat.color;
+        div.innerHTML = `<span class="cat-icon">${cat.icon}</span><div class="cat-name">${cat.name}</div><div class="cat-count">${cat.count} tools</div>`;
+        div.onclick = () => { showPage('tools'); filterToolsByCategory(cat.name); };
+        el.appendChild(div);
+      });
+    }
+
+    function renderToolOfDay() {
+      const tools = TOOLS.filter(t => t.featured || t.trending);
+      const idx = new Date().getDate() % tools.length;
+      const tool = tools[idx];
+      document.getElementById('toolOfDay').innerHTML = `
+    <div style="display:flex;align-items:center;gap:0.7rem;margin-bottom:0.7rem;">
+      <div style="font-size:2rem;background:${tool.color}22;width:50px;height:50px;border-radius:12px;display:flex;align-items:center;justify-content:center;">${tool.icon}</div>
+      <div>
+        <div class="daily-title">${tool.name}</div>
+        <div class="tool-stars">${'★'.repeat(Math.floor(tool.rating))} ${tool.rating}</div>
+      </div>
+    </div>
+    <p class="daily-sub">${tool.desc}</p>
+    <div style="display:flex;gap:0.6rem;flex-wrap:wrap;">
+      <button class="btn-view" onclick="openToolModal(${tool.id})">Learn More →</button>
+      <span class="tool-tag">${tool.category}</span>
+    </div>
+  `;
+    }
+
+    function renderPromptOfDay() {
+      const allPrompts = Object.values(PROMPTS).flat();
+      const idx = new Date().getDate() % allPrompts.length;
+      const prompt = allPrompts[idx];
+      document.getElementById('promptOfDay').innerHTML = `
+    <div class="daily-title" style="color:var(--text);margin-bottom:0.5rem;">${prompt.title}</div>
+    <p class="daily-sub">${prompt.text.substring(0, 120)}...</p>
+    <button class="btn-copy" onclick="copyText('${prompt.text.replace(/'/g, "\\'")}')">📋 Copy Prompt</button>
+  `;
+    }
+
+    function renderHomePrompts() {
+      const el = document.getElementById('homePromptsGrid');
+      const allPrompts = Object.entries(PROMPTS).flatMap(([cat, prompts]) => prompts.map(p => ({ ...p, cat })));
+      const sample = allPrompts.sort(() => 0.5 - Math.random()).slice(0, 6);
+      sample.forEach(p => {
+        const div = document.createElement('div');
+        div.className = 'prompt-card';
+        div.innerHTML = `
+      <div class="prompt-cat">${p.cat}</div>
+      <div class="prompt-title">${p.title}</div>
+      <div class="prompt-text">${p.text}</div>
+      <div style="display:flex;gap:0.5rem;flex-wrap:wrap;">
+        <button class="btn-copy" onclick="copyText(\`${p.text.replace(/`/g, '\\`')}\`)">📋 Copy</button>
+        <button class="btn-outline" style="padding:0.35rem 0.8rem;font-size:0.75rem;border-radius:8px;" onclick="sharePrompt('${p.title}')">↗️ Share</button>
+      </div>
+    `;
+        el.appendChild(div);
+      });
+    }
+
+    function renderLeaderboard(containerId) {
+      const el = document.getElementById(containerId);
+      if (!el) return;
+      LEADERBOARD_DATA.forEach((item, i) => {
+        const div = document.createElement('div');
+        div.className = 'lb-item';
+        const rankClass = i === 0 ? 'lb-rank-1' : i === 1 ? 'lb-rank-2' : i === 2 ? 'lb-rank-3' : 'lb-rank-other';
+        div.innerHTML = `
+      <div class="lb-rank ${rankClass}">${i + 1}</div>
+      <div class="lb-icon">${item.icon}</div>
+      <div class="lb-info">
+        <div class="lb-name">${item.name}</div>
+        <div class="lb-cat">${item.cat}</div>
+      </div>
+      <div class="lb-votes">${item.votes} votes</div>
+      <div class="lb-bar-wrap"><div class="lb-bar" style="width:${item.pct}%"></div></div>
+    `;
+        el.appendChild(div);
+      });
+    }
+
+    function renderFeatured() {
+      TOOLS.filter(t => t.featured).slice(0, 6).forEach(t => renderToolCard(t, 'featuredGrid'));
+    }
+
+    function renderHomeBlog() {
+      const el = document.getElementById('homeBlogGrid');
+      BLOG_POSTS.slice(0, 3).forEach(p => renderBlogCard(p, el));
+    }
+
+    function renderBlogCard(post, container) {
+      const div = document.createElement('div');
+      div.className = 'blog-card';
+      div.innerHTML = `
+    <div class="blog-thumb" style="background:${post.color};">${post.emoji}</div>
+    <div class="blog-body">
+      <div class="blog-tag">${post.tag}</div>
+      <div class="blog-title">${post.title}</div>
+      <div class="blog-meta">${post.date} · 5 min read</div>
+    </div>
+  `;
+      if (typeof container === 'string') document.getElementById(container).appendChild(div);
+      else container.appendChild(div);
+    }
+
+    function renderAllTools(filter = 'all') {
+      const el = document.getElementById('allToolsGrid');
+      el.innerHTML = '';
+      const tools = filter === 'all' ? TOOLS :
+        filter === 'Free' ? TOOLS.filter(t => t.free) :
+          filter === 'Trending' ? TOOLS.filter(t => t.trending) :
+            TOOLS.filter(t => t.category === filter);
+      tools.forEach(t => renderToolCard(t, 'allToolsGrid'));
+    }
+
+    function renderAllCats() {
+      const el = document.getElementById('allCatsGrid');
+      CATEGORIES.forEach(cat => {
+        const div = document.createElement('div');
+        div.className = 'cat-card';
+        div.style.background = cat.color;
+        div.innerHTML = `<span class="cat-icon" style="font-size:2.5rem;">${cat.icon}</span><div class="cat-name" style="font-size:1rem;margin-top:0.5rem;">${cat.name}</div><div class="cat-count">${cat.count} tools</div><div style="font-size:0.75rem;color:var(--muted);margin-top:0.3rem;">${cat.desc}</div>`;
+        div.onclick = () => {
+          filterCatTools(cat.name);
+        };
+        el.appendChild(div);
+      });
+    }
+
+    function filterCatTools(catName) {
+      const tools = TOOLS.filter(t => t.category === catName || (catName === 'Trending' && t.trending));
+      const el = document.getElementById('catToolsSection');
+      el.innerHTML = `<div class="section-header"><h2 class="section-title">${catName}</h2></div><div class="tools-grid" id="catToolsGrid"></div>`;
+      tools.forEach(t => renderToolCard(t, 'catToolsGrid'));
+      el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+    function renderAllBlog() {
+      const el = document.getElementById('allBlogGrid');
+      BLOG_POSTS.forEach(p => renderBlogCard(p, el));
+    }
+
+    function renderTrending() {
+      TOOLS.filter(t => t.trending).forEach(t => renderToolCard(t, 'trendingGrid'));
+    }
+
+    function renderPrompts() {
+      const tabNav = document.getElementById('promptTabs');
+      const tabContents = document.getElementById('promptTabContents');
+      const cats = Object.keys(PROMPTS);
+
+      cats.forEach((cat, i) => {
+        const btn = document.createElement('button');
+        btn.className = `tab-btn ${i === 0 ? 'active' : ''}`;
+        btn.textContent = cat;
+        btn.onclick = () => switchPromptTab(cat);
+        tabNav.appendChild(btn);
+
+        const content = document.createElement('div');
+        content.className = `tab-content ${i === 0 ? 'active' : ''}`;
+        content.id = `tab-${cat.replace(/\s/g, '_')}`;
+        const grid = document.createElement('div');
+        grid.className = 'prompts-grid';
+        PROMPTS[cat].forEach(p => {
+          const div = document.createElement('div');
+          div.className = 'prompt-card';
+          div.innerHTML = `
+        <div class="prompt-cat">${cat}</div>
+        <div class="prompt-title">${p.title}</div>
+        <div class="prompt-text">${p.text}</div>
+        <div style="display:flex;gap:0.5rem;flex-wrap:wrap;align-items:center;">
+          <button class="btn-copy" onclick="copyText(\`${p.text.replace(/`/g, '\\`')}\`, this)">📋 Copy Prompt</button>
+          <button class="btn-outline" style="padding:0.35rem 0.8rem;font-size:0.75rem;border-radius:8px;" onclick="sharePrompt('${p.title}')">↗️ Share</button>
+        </div>
+      `;
+          grid.appendChild(div);
+        });
+        content.appendChild(grid);
+
+        // Add more prompts filler for each category to simulate 300+
+        const fillerPrompts = generateFillerPrompts(cat, 20);
+        fillerPrompts.forEach(p => {
+          const div = document.createElement('div');
+          div.className = 'prompt-card';
+          div.innerHTML = `
+        <div class="prompt-cat">${cat}</div>
+        <div class="prompt-title">${p.title}</div>
+        <div class="prompt-text">${p.text}</div>
+        <div style="display:flex;gap:0.5rem;flex-wrap:wrap;">
+          <button class="btn-copy" onclick="copyText(\`${p.text.replace(/`/g, '\\`')}\`, this)">📋 Copy Prompt</button>
+        </div>
+      `;
+          grid.appendChild(div);
+        });
+
+        content.appendChild(grid);
+        tabContents.appendChild(content);
+      });
+    }
+
+    function generateFillerPrompts(cat, count) {
+      const templates = {
+        'ChatGPT': [
+          { t: 'Newsletter Writer', p: 'Write a weekly newsletter for [BRAND] about [TOPIC]. Include: catchy subject line, opening hook, 3 main sections with value, a tip of the week, and CTA. Tone: [TONE]. Word count: 400-600 words.' },
+          { t: 'Debate Trainer', p: 'You are a debate coach. Help me build the strongest argument for [POSITION]. Provide: thesis, 5 supporting arguments with evidence, counterarguments and rebuttals, and closing statement. Topic: [TOPIC].' },
+          { t: 'Story Generator', p: 'Write a compelling short story about [PROTAGONIST] who must overcome [CHALLENGE] in a world where [UNIQUE PREMISE]. Include: vivid opening, character development, plot twist, and satisfying resolution. Genre: [GENRE]. ~1000 words.' },
+        ],
+        'Image Gen': [
+          { t: 'Architecture Render', p: 'Photorealistic architectural render of [BUILDING TYPE], modernist design with [MATERIAL], natural lighting, professional architectural photography, surrounded by lush landscaping, blue sky, ultra detailed, 8K' },
+          { t: 'Character Sheet', p: 'Full character reference sheet for [CHARACTER] showing front, side, and back view, [STYLE] art style, detailed costume design, color palette, consistent proportions, white background, concept art quality' },
+        ],
+      };
+      const result = [];
+      for (let i = 0; i < count; i++) {
+        const base = templates[cat] || templates['ChatGPT'];
+        const template = base[i % base.length];
+        result.push({
+          title: `${template.t} ${i > base.length ? `#${Math.floor(i / base.length) + 1}` : ''}`.trim(),
+          text: template.p
+        });
+      }
+      return result;
+    }
+
+    function switchPromptTab(cat) {
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+      event.target.classList.add('active');
+      const content = document.getElementById(`tab-${cat.replace(/\s/g, '_')}`);
+      if (content) content.classList.add('active');
+    }
+
+    // ============================================================
+    // INTERACTIONS
+    // ============================================================
+    function filterTools(type, btn) {
+      document.querySelectorAll('#toolFilters .filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      renderAllTools(type);
+    }
+
+    function filterToolsByCategory(cat) {
+      const btn = [...document.querySelectorAll('#toolFilters .filter-btn')].find(b => b.textContent.includes(cat.split(' ')[0]));
+      if (btn) { document.querySelectorAll('#toolFilters .filter-btn').forEach(b => b.classList.remove('active')); btn.classList.add('active'); }
+      renderAllTools(cat);
+      document.querySelector('#page-tools').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function openToolModal(id) {
+      const tool = TOOLS.find(t => t.id === id);
+      if (!tool) return;
+      const related = TOOLS.filter(t => t.category === tool.category && t.id !== tool.id).slice(0, 3);
+      document.getElementById('modalContent').innerHTML = `
+    <div class="modal-header">
+      <div class="modal-icon" style="background:${tool.color}22;padding:0.7rem;border-radius:12px;">${tool.icon}</div>
+      <div>
+        <div class="modal-title">${tool.name}</div>
+        <div class="modal-subtitle">${tool.category} · ${tool.free ? '🟢 Free' : '💳 Paid'} · ${'★'.repeat(Math.floor(tool.rating))} ${tool.rating}</div>
+      </div>
+      <button class="modal-close" onclick="document.getElementById('toolModal').classList.remove('open')">✕</button>
+    </div>
+    <div class="modal-body">
+      <div class="ad-box">📢 Advertisement Area</div>
+      <p style="color:var(--muted);margin-bottom:1.2rem;line-height:1.7;">${tool.desc}</p>
+      <h4 style="font-family:'Syne',sans-serif;font-weight:700;margin-bottom:0.7rem;">✦ Key Features</h4>
+      <ul class="modal-features">
+        ${(tool.features || []).map(f => `<li>${f}</li>`).join('')}
+      </ul>
+      <h4 style="font-family:'Syne',sans-serif;font-weight:700;margin-bottom:0.7rem;">Pros & Cons</h4>
+      <div class="pros-cons">
+        <div class="pros-card"><h4>✅ Pros</h4><ul>${(tool.pros || []).map(p => `<li>• ${p}</li>`).join('')}</ul></div>
+        <div class="cons-card"><h4>❌ Cons</h4><ul>${(tool.cons || []).map(c => `<li>• ${c}</li>`).join('')}</ul></div>
+      </div>
+      <div style="display:flex;gap:0.7rem;flex-wrap:wrap;align-items:center;margin-top:1.5rem;">
+        <a href="${tool.url}" target="_blank" class="btn-visit">Visit ${tool.name} ↗</a>
+        <button class="btn-bookmark ${bookmarks.includes(tool.id) ? 'saved' : ''}" onclick="toggleBookmark(${tool.id},this)">${bookmarks.includes(tool.id) ? '🔖 Saved' : '🔖 Save'}</button>
+        <button class="btn-outline" style="padding:0.5rem 1rem;font-size:0.8rem;border-radius:8px;" onclick="shareToolModal('${tool.name}')">↗️ Share</button>
+      </div>
+      ${related.length ? `
+      <h4 style="font-family:'Syne',sans-serif;font-weight:700;margin:1.5rem 0 0.8rem;">Related Tools</h4>
+      <div style="display:flex;gap:0.7rem;flex-wrap:wrap;">
+        ${related.map(r => `<button class="filter-btn active" onclick="openToolModal(${r.id})" style="display:flex;align-items:center;gap:0.4rem;">${r.icon} ${r.name}</button>`).join('')}
+      </div>`: ''}
+    </div>
+  `;
+      document.getElementById('toolModal').classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal(e) {
+      if (e.target.id === 'toolModal') {
+        document.getElementById('toolModal').classList.remove('open');
+        document.body.style.overflow = '';
+      }
+    }
+
+    function toggleBookmark(id, btn) {
+      if (bookmarks.includes(id)) {
+        bookmarks = bookmarks.filter(b => b !== id);
+        btn.classList.remove('saved');
+        btn.innerHTML = '🔖';
+        showToast('Removed from bookmarks');
+      } else {
+        bookmarks.push(id);
+        btn.classList.add('saved');
+        btn.innerHTML = '🔖';
+        showToast('✅ Bookmarked!');
+      }
+      localStorage.setItem('ai_hub_bookmarks', JSON.stringify(bookmarks));
+      // Update all bookmark buttons for this tool
+      document.querySelectorAll(`[onclick*="toggleBookmark(${id}"]`).forEach(b => {
+        b.classList.toggle('saved', bookmarks.includes(id));
+      });
+    }
+
+    function copyText(text, btn) {
+      navigator.clipboard.writeText(text).then(() => {
+        showToast('✓ Copied to clipboard!');
+        if (btn) { const orig = btn.innerHTML; btn.innerHTML = '✓ Copied!'; btn.classList.add('copied'); setTimeout(() => { btn.innerHTML = orig; btn.classList.remove('copied'); }, 2000); }
+      });
+    }
+
+    function showToast(msg) {
+      const t = document.getElementById('toast');
+      t.textContent = msg;
+      t.classList.add('show');
+      setTimeout(() => t.classList.remove('show'), 2500);
+    }
+
+    function sharePrompt(title) {
+      if (navigator.share) {
+        navigator.share({ title, text: `Check out this AI prompt: ${title}`, url: window.location.href });
+      } else {
+        copyText(window.location.href);
+        showToast('✓ Link copied!');
+      }
+    }
+
+    function shareToolModal(name) {
+      copyText(window.location.href);
+      showToast(`✓ ${name} link copied!`);
+    }
+
+    // Random Prompt
+    let randomPromptCurrent = '';
+    function generateRandomPrompt() {
+      const all = Object.values(PROMPTS).flat();
+      const p = all[Math.floor(Math.random() * all.length)];
+      randomPromptCurrent = p.text;
+      const el = document.getElementById('randomPromptText');
+      el.style.opacity = '0';
+      setTimeout(() => { el.textContent = p.text; el.style.opacity = '1'; el.style.transition = 'opacity 0.3s'; }, 200);
+    }
+    function copyRandomPrompt() {
+      if (randomPromptCurrent) copyText(randomPromptCurrent);
+      else showToast('Generate a prompt first!');
+    }
+
+    // Search
+    function handleHeroSearch(val) {
+      const results = document.getElementById('searchResults');
+      if (!val.trim()) { results.classList.remove('visible'); return; }
+      const toolResults = TOOLS.filter(t => t.name.toLowerCase().includes(val.toLowerCase()) || t.category.toLowerCase().includes(val.toLowerCase())).slice(0, 4);
+      const promptResults = Object.values(PROMPTS).flat().filter(p => p.title.toLowerCase().includes(val.toLowerCase())).slice(0, 3);
+      if (!toolResults.length && !promptResults.length) { results.classList.remove('visible'); return; }
+      results.innerHTML = '';
+      toolResults.forEach(t => {
+        const div = document.createElement('div');
+        div.className = 'search-result-item';
+        div.innerHTML = `<span class="search-result-icon">${t.icon}</span><div><div class="search-result-name">${t.name}</div><div class="search-result-type">Tool · ${t.category}</div></div>`;
+        div.onclick = () => { results.classList.remove('visible'); openToolModal(t.id); };
+        results.appendChild(div);
+      });
+      promptResults.forEach(p => {
+        const div = document.createElement('div');
+        div.className = 'search-result-item';
+        div.innerHTML = `<span class="search-result-icon">💬</span><div><div class="search-result-name">${p.title}</div><div class="search-result-type">Prompt</div></div>`;
+        div.onclick = () => { results.classList.remove('visible'); showPage('prompts'); };
+        results.appendChild(div);
+      });
+      results.classList.add('visible');
+    }
+
+    function doSearch() {
+      const val = document.getElementById('heroSearch').value;
+      if (!val.trim()) return;
+      document.getElementById('searchResults').classList.remove('visible');
+      showPage('tools');
+      const matching = TOOLS.filter(t => t.name.toLowerCase().includes(val.toLowerCase()) || t.desc.toLowerCase().includes(val.toLowerCase()) || t.category.toLowerCase().includes(val.toLowerCase()));
+      const el = document.getElementById('allToolsGrid');
+      el.innerHTML = '';
+      matching.forEach(t => renderToolCard(t, 'allToolsGrid'));
+      document.getElementById('allToolsGrid').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    document.addEventListener('click', (e) => {
+      if (!e.target.closest('.hero-search-wrap')) document.getElementById('searchResults').classList.remove('visible');
+    });
+
+    // Page navigation
+    function showPage(page) {
+      document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+      document.getElementById(`page-${page}`)?.classList.add('active');
+      window.scrollTo(0, 0);
+      document.getElementById('toolModal').classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    // Mobile menu
+    function toggleMobileMenu() { document.getElementById('mobileMenu').classList.toggle('open'); }
+    function closeMobile() { document.getElementById('mobileMenu').classList.remove('open'); }
+
+    // Theme toggle
+    let darkMode = true;
+    function toggleTheme() {
+      darkMode = !darkMode;
+      if (!darkMode) {
+        document.documentElement.style.setProperty('--bg', '#f8f8ff');
+        document.documentElement.style.setProperty('--bg2', '#f0f0fa');
+        document.documentElement.style.setProperty('--bg3', '#e8e8f5');
+        document.documentElement.style.setProperty('--text', '#1a1a2e');
+        document.documentElement.style.setProperty('--muted', '#6666aa');
+        document.documentElement.style.setProperty('--glass', 'rgba(0,0,0,0.04)');
+        document.documentElement.style.setProperty('--glass2', 'rgba(0,0,0,0.08)');
+        document.documentElement.style.setProperty('--border', 'rgba(0,0,0,0.1)');
+        document.getElementById('themeToggle').textContent = '☀️';
+      } else {
+        document.documentElement.style.setProperty('--bg', '#07070f');
+        document.documentElement.style.setProperty('--bg2', '#0d0d1a');
+        document.documentElement.style.setProperty('--bg3', '#12122a');
+        document.documentElement.style.setProperty('--text', '#e8e8f0');
+        document.documentElement.style.setProperty('--muted', '#8888aa');
+        document.documentElement.style.setProperty('--glass', 'rgba(255,255,255,0.04)');
+        document.documentElement.style.setProperty('--glass2', 'rgba(255,255,255,0.08)');
+        document.documentElement.style.setProperty('--border', 'rgba(255,255,255,0.09)');
+        document.getElementById('themeToggle').textContent = '🌙';
+      }
+    }
+
+    // Newsletter
+    function subscribeNewsletter() {
+      showToast('🎉 Subscribed! Check your email.');
+    }
+
+    // Submit Tool
+    function submitTool() {
+      showToast('✅ Tool submitted for review! Thanks!');
+    }
+
+    // Contact
+    function sendMessage() {
+      showToast('✅ Message sent! We\'ll reply within 24h.');
+    }
+
+    // Scroll reveal
+    function setupReveal() {
+      const obs = new IntersectionObserver((entries) => {
+        entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
+      }, { threshold: 0.1 });
+      document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+    }
+
+    // Init on load
+    document.addEventListener('DOMContentLoaded', init);
+  </script>
+
+  <!-- ULTIMATE UI STYLES -->
+  <style>
+    .tool-description {
+      margin-top: 1rem;
+      border-radius: 14px;
+      padding: 1rem;
+      background: linear-gradient(145deg, rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.2));
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      max-height: 55px;
+      overflow: hidden;
+      transition: all 0.4s ease;
+      cursor: pointer;
+      position: relative;
+    }
+
+    .tool-description:hover {
+      transform: translateY(-3px) scale(1.01);
+      border-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .tool-description .guide-inner {
+      opacity: 0;
+      transition: opacity 0.4s ease;
+    }
+
+    .tool-description.active {
+      max-height: 320px;
+    }
+
+    .tool-description.active .guide-inner {
+      opacity: 1;
+    }
+  </style>
+
+  <!-- ULTIMATE UI SCRIPT -->
+  <script>
+    function createToolGuide() {
+      return `
+  <div class="tool-description">
+    <h4 style="font-size:0.95rem;font-weight:700;margin-bottom:0.5rem;">
+      💡 Why & How to Use This Tool
+    </h4>
+
+    <div class="guide-inner">
+      <p style="font-size:0.85rem;opacity:0.8;margin-bottom:0.6rem;">
+        This tool helps you complete tasks faster (mee pani fast ga avuthundi).
+      </p>
+
+      <ul style="font-size:0.8rem;opacity:0.8;padding-left:1rem;margin-bottom:0.6rem;">
+        <li>✔ Saves time (time save avuthundi)</li>
+        <li>✔ Easy to use (chala simple)</li>
+        <li>✔ Instant results (immediate output vasthundi)</li>
+      </ul>
+
+      <p style="font-size:0.8rem;opacity:0.8;">
+        👉 Enter input → Click generate → Get result
+      </p>
+    </div>
+  </div>`;
+    }
+
+    window.addEventListener("DOMContentLoaded", () => {
+      const toolCards = document.querySelectorAll(".tool-card");
+
+      toolCards.forEach(card => {
+        if (!card.querySelector('.tool-description')) {
+          card.insertAdjacentHTML("beforeend", createToolGuide());
+        }
+      });
+
+      document.querySelectorAll(".tool-description").forEach(box => {
+        box.addEventListener("click", () => {
+          box.classList.toggle("active");
+        });
+      });
+    });
+
+    const canvas = document.getElementById("sparkCanvas");
+    const ctx = canvas.getContext("2d");
+
+    let particles = [];
+    let shootingStars = [];
+    let mouse = { x: null, y: null };
+
+    const PARTICLE_COUNT = 160;
+
+    function resizeCanvas() {
+      canvas.width = window.innerWidth;
+      canvas.height = document.querySelector('.hero').offsetHeight;
+    }
+    resizeCanvas();
+    window.addEventListener("resize", resizeCanvas);
+
+    window.addEventListener("mousemove", (e) => {
+      mouse.x = e.x;
+      mouse.y = e.y;
+    });
+
+    class Particle {
+      constructor() {
+        this.reset();
+      }
+
+      reset() {
+        this.x = Math.random() * canvas.width;
+        this.y = Math.random() * canvas.height;
+        this.z = Math.random() * 2;
+        this.size = Math.random() * 2 + 0.5;
+        this.speedX = (Math.random() - 0.5) * 0.2;
+        this.speedY = (Math.random() - 0.5) * 0.2;
+        this.opacity = Math.random();
+      }
+
+      update() {
+        this.x += this.speedX * this.z;
+        this.y += this.speedY * this.z;
+
+        if (mouse.x && mouse.y) {
+          let dx = this.x - mouse.x;
+          let dy = this.y - mouse.y;
+          let dist = Math.sqrt(dx * dx + dy * dy);
+
+          if (dist < 120) {
+            this.x += dx * 0.01;
+            this.y += dy * 0.01;
+          }
+        }
+
+        if (this.x < 0 || this.x > canvas.width || this.y < 0 || this.y > canvas.height) {
+          this.reset();
+        }
+      }
+
+      draw() {
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.size * this.z, 0, Math.PI * 2);
+
+        let colors = ["124,92,252", "34,211,238", "168,85,247"];
+        let color = colors[Math.floor(Math.random() * colors.length)];
+
+        ctx.fillStyle = `rgba(${color},${this.opacity})`;
+        ctx.shadowBlur = 25;
+        ctx.shadowColor = `rgb(${color})`;
+        ctx.fill();
+      }
+    }
+
+    class ShootingStar {
+      constructor() {
+        this.reset();
+      }
+
+      reset() {
+        this.x = Math.random() * canvas.width;
+        this.y = 0;
+        this.len = Math.random() * 80 + 50;
+        this.speed = Math.random() * 6 + 4;
+      }
+
+      update() {
+        this.x += this.speed;
+        this.y += this.speed;
+
+        if (this.y > canvas.height) {
+          this.reset();
+        }
+      }
+
+      draw() {
+        ctx.beginPath();
+        ctx.moveTo(this.x, this.y);
+        ctx.lineTo(this.x - this.len, this.y - this.len);
+
+        ctx.strokeStyle = "rgba(255,255,255,0.7)";
+        ctx.lineWidth = 2;
+        ctx.shadowBlur = 20;
+        ctx.shadowColor = "#fff";
+        ctx.stroke();
+      }
+    }
+
+    for (let i = 0; i < PARTICLE_COUNT; i++) {
+      particles.push(new Particle());
+    }
+
+    for (let i = 0; i < 3; i++) {
+      shootingStars.push(new ShootingStar());
+    }
+
+    function animate() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+      particles.forEach(p => {
+        p.update();
+        p.draw();
+      });
+
+      shootingStars.forEach(s => {
+        s.update();
+        s.draw();
+      });
+
+      requestAnimationFrame(animate);
+    }
+
+    animate();
+    // ✅ LOAD USER DATA FROM LOCAL STORAGE
+document.addEventListener("DOMContentLoaded", () => {
+  const userData = localStorage.getItem("zentivraUser");
+
+  if (userData) {
+    const user = JSON.parse(userData);
+
+    // display name
+    const userDisplay = document.getElementById("userNameDisplay");
+    if (userDisplay) {
+      userDisplay.innerHTML = `👋 Hi, ${user.name}`;
+    }
+  } else {
+    // if no data → redirect back
+    window.location.href = "index.html";
+  }
+});
+  </script>
+
+</body>
+
+</html>
