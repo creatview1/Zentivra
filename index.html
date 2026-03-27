@@ -552,12 +552,12 @@
   e.preventDefault();
   let ok = true;
 
-  const email = document.getElementById('email').value;
+
   const name = document.getElementById('fullname').value.trim();
   const type = document.getElementById('usertype').value;
   const code = document.getElementById('accesscode').value.trim();
 
-  if (!validateEmail(email)) { setValid('group-email', false); ok = false; } else { setValid('group-email', true); }
+
   if (!name) { setValid('group-name', false); ok = false; } else { setValid('group-name', true); }
   if (!type) { setValid('group-type', false); ok = false; } else { setValid('group-type', true); }
   if (code.length < 4) { setValid('group-code', false); ok = false; } else { setValid('group-code', true); }
@@ -566,7 +566,7 @@
 
   // ✅ LOCAL STORAGE SAVE
   localStorage.setItem("zentivraUser", JSON.stringify({
-    email: email,
+   
     name: name,
     type: type
   }));
@@ -582,9 +582,9 @@
   }, 1200);
 });
 
-    ['email', 'fullname', 'accesscode'].forEach(id => {
+    ['fullname', 'accesscode'].forEach(id => {
       document.getElementById(id).addEventListener('input', () => {
-        const grp = id === 'email' ? 'group-email' : id === 'fullname' ? 'group-name' : 'group-code';
+        const grp = id === 'fullname' ? 'group-name' : 'group-code';
         document.getElementById(grp).classList.remove('invalid');
       });
     });
