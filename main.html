@@ -2754,6 +2754,17 @@ function copyPrompt() {
       renderLeaderboard('trendingLeaderboard');
       renderPrompts();
       setupReveal();
+
+      // ── Restore page from URL hash or existing history state ──
+      const hash = location.hash.slice(1);  // strip the leading '#'
+      const initialPage = (history.state && history.state.page && VALID_PAGES.includes(history.state.page))
+        ? history.state.page
+        : (VALID_PAGES.includes(hash) ? hash : 'home');
+
+      // Replace (not push) so pressing back from the landing state goes to the
+      // previous site rather than looping back to the same page.
+      history.replaceState({ page: initialPage }, '', '#' + initialPage);
+      showPage(initialPage, false);
     }
 
     // ============================================================
@@ -3054,7 +3065,7 @@ function copyPrompt() {
         <div class="modal-title">${tool.name}</div>
         <div class="modal-subtitle">${tool.category} · ${tool.free ? '🟢 Free' : '💳 Paid'} · ${'★'.repeat(Math.floor(tool.rating))} ${tool.rating}</div>
       </div>
-      <button class="modal-close" onclick="document.getElementById('toolModal').classList.remove('open')">✕</button>
+      <button class="modal-close" onclick="closeToolModal()">✕</button>
     </div>
     <div class="modal-body">
       <div class="ad-box">📢 Advertisement Area</div>
@@ -3082,12 +3093,13 @@ function copyPrompt() {
   `;
       document.getElementById('toolModal').classList.add('open');
       document.body.style.overflow = 'hidden';
+      // Push a modal state so the back button closes the modal instead of navigating
+      history.pushState({ page: (history.state && history.state.page) || 'home', modal: true }, '', location.href);
     }
 
     function closeModal(e) {
       if (e.target.id === 'toolModal') {
-        document.getElementById('toolModal').classList.remove('open');
-        document.body.style.overflow = '';
+        closeToolModal();
       }
     }
 
@@ -3194,14 +3206,51 @@ function copyPrompt() {
       if (!e.target.closest('.hero-search-wrap')) document.getElementById('searchResults').classList.remove('visible');
     });
 
-    // Page navigation
-    function showPage(page) {
-      document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
-      document.getElementById(`page-${page}`)?.classList.add('active');
-      window.scrollTo(0, 0);
-      document.getElementById('toolModal').classList.remove('open');
+    // ── Modal helper (single source of truth for close + overflow reset) ──
+    function closeToolModal() {
+      const overlay = document.getElementById('toolModal');
+      if (!overlay.classList.contains('open')) return; // already closed
+      overlay.classList.remove('open');
       document.body.style.overflow = '';
+      // If we pushed a modal history entry, pop it silently
+      if (history.state && history.state.modal) {
+        history.back();
+      }
     }
+
+    // ── ESC key closes modal ──
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') closeToolModal();
+    });
+
+    // ── Page navigation with history.pushState ──
+    const VALID_PAGES = ['home','tools','prompts','categories','trending','blog','submit','about','contact'];
+
+    function showPage(page, pushState = true) {
+      if (!VALID_PAGES.includes(page)) page = 'home';
+      document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+      const target = document.getElementById(`page-${page}`);
+      if (target) target.classList.add('active');
+      window.scrollTo(0, 0);
+      closeToolModal();                               // always reset scroll lock
+      document.getElementById('mobileMenu').classList.remove('open'); // close mobile nav
+      if (pushState) {
+        history.pushState({ page }, '', '#' + page);
+      }
+    }
+
+    // ── Back / Forward button support ──
+    window.addEventListener('popstate', function (e) {
+      // If the state we're leaving was a modal state, just close the modal
+      if (document.getElementById('toolModal').classList.contains('open')) {
+        document.getElementById('toolModal').classList.remove('open');
+        document.body.style.overflow = '';
+        return;
+      }
+      // Otherwise restore the correct page
+      const page = (e.state && e.state.page) ? e.state.page : 'home';
+      showPage(page, false);   // false = don't push again
+    });
 
     // Mobile menu
     function toggleMobileMenu() { document.getElementById('mobileMenu').classList.toggle('open'); }
@@ -3481,8 +3530,8 @@ document.addEventListener("DOMContentLoaded", () => {
       userDisplay.innerHTML = `👋 Hi, ${user.name}`;
     }
   } else {
-    // if no data → redirect back
-    window.location.href = "index.html";
+    // if no data → redirect back (replace so pressing Forward doesn't loop)
+    window.location.replace("index.html");
   }
 });
   </script>
